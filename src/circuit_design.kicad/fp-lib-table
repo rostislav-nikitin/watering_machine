@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name circuit_design)(type KiCad)(uri /home/s0lid/Sources/watering_machine/src/circuit_design.kicad)(options "")(descr ""))
+)
