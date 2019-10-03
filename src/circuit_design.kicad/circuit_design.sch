@@ -453,10 +453,6 @@ Wire Wire Line
 Wire Wire Line
 	8700 8050 8700 7400
 Wire Wire Line
-	7600 8050 7600 7850
-Wire Wire Line
-	7600 8050 7900 8050
-Wire Wire Line
 	7600 7850 7900 7850
 Wire Wire Line
 	7900 7950 7800 7950
@@ -477,8 +473,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS109" H 5400 9600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 9200 5400 9100
-Wire Wire Line
-	8200 8400 8200 8250
 $Comp
 L 74xx_IEEE:7402 U31
 U 2 1 5D738726
@@ -515,7 +509,7 @@ Wire Wire Line
 Wire Wire Line
 	8700 7300 9500 7300
 Connection ~ 8700 7050
-Text Label 12400 9900 0    50   ~ 0
+Text Label 13000 9800 0    50   ~ 0
 Reset(Out)
 Wire Wire Line
 	600  5550 600  5700
@@ -978,22 +972,6 @@ Wire Wire Line
 	7600 7850 7600 7700
 Wire Wire Line
 	7600 7700 7400 7700
-Connection ~ 7600 7850
-$Comp
-L 74xx_IEEE:7404 U15
-U 2 1 5DAFF7B3
-P 13950 2000
-F 0 "U15" H 13950 2466 50  0000 C CNN
-F 1 "К155ЛН1" H 13950 2375 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 13950 2000 50  0001 C CNN
-F 3 "http://www.chipinfo.ru/dsheets/ic/155/ln1.html" H 13950 2000 50  0001 C CNN
-	2    13950 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14500 2000 14700 2000
-Wire Wire Line
-	13400 2000 13400 1400
 Wire Wire Line
 	13400 1400 14600 1400
 Wire Wire Line
@@ -1043,14 +1021,9 @@ Wire Wire Line
 Wire Wire Line
 	8600 3400 8600 4900
 Connection ~ 8600 4900
-Wire Wire Line
-	9600 2900 9400 2900
-Wire Wire Line
-	9400 2900 9400 2700
 Connection ~ 9400 2500
 Wire Wire Line
 	9600 2700 9400 2700
-Connection ~ 9400 2700
 Wire Wire Line
 	9400 2700 9400 2500
 Wire Wire Line
@@ -1136,12 +1109,9 @@ Wire Wire Line
 	15000 4700 15000 2200
 Connection ~ 9900 3350
 Wire Wire Line
-	9900 3350 9900 4700
+	9900 3350 9900 3600
 Wire Wire Line
 	9900 3300 9900 3350
-Wire Wire Line
-	9900 3100 9900 3300
-Connection ~ 9900 3300
 Wire Wire Line
 	9900 3300 9800 3300
 Wire Wire Line
@@ -1152,7 +1122,6 @@ Wire Wire Line
 	16800 3050 17000 3050
 Wire Wire Line
 	16800 3700 17000 3700
-Connection ~ 13400 2000
 $Comp
 L power:+5V #PWR016
 U 1 1 5E1EC533
@@ -1179,8 +1148,6 @@ F 3 "" H 19800 2800 50  0001 C CNN
 	1    19800 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13400 2000 13400 3050
 Wire Wire Line
 	18400 2400 18400 2950
 Wire Wire Line
@@ -3334,12 +3301,12 @@ Wire Wire Line
 $Comp
 L 74xx_IEEE:7404 U32
 U 4 1 5DAFF8CC
-P 11750 9900
-F 0 "U32" H 11750 10366 50  0000 C CNN
-F 1 "К155ЛН1" H 11750 10275 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 11750 9900 50  0001 C CNN
-F 3 "http://www.chipinfo.ru/dsheets/ic/155/ln1.html" H 11750 9900 50  0001 C CNN
-	4    11750 9900
+P 12350 9800
+F 0 "U32" H 12350 10266 50  0000 C CNN
+F 1 "К155ЛН1" H 12350 10175 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 12350 9800 50  0001 C CNN
+F 3 "http://www.chipinfo.ru/dsheets/ic/155/ln1.html" H 12350 9800 50  0001 C CNN
+	4    12350 9800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3366,8 +3333,6 @@ Wire Wire Line
 Connection ~ 4950 8300
 Wire Wire Line
 	5200 8500 4950 8500
-Wire Wire Line
-	6300 8400 8200 8400
 $Comp
 L 74xx_IEEE:7402 U31
 U 3 1 5F94A258
@@ -3406,14 +3371,6 @@ Wire Wire Line
 Wire Wire Line
 	11400 9300 11400 4900
 Wire Wire Line
-	10600 9900 11200 9900
-Wire Wire Line
-	11400 9300 12400 9300
-Wire Wire Line
-	12400 9300 12400 9900
-Wire Wire Line
-	12400 9900 12300 9900
-Wire Wire Line
 	5400 10000 5400 12700
 Wire Wire Line
 	7900 10200 7900 12700
@@ -3435,10 +3392,6 @@ Connection ~ 8950 12700
 Wire Wire Line
 	11750 12700 10700 12700
 Connection ~ 10050 12700
-Wire Wire Line
-	12150 8950 12150 12700
-Wire Wire Line
-	12150 12700 11750 12700
 Connection ~ 11750 12700
 Wire Wire Line
 	7950 9350 7950 9500
@@ -3660,12 +3613,12 @@ $EndComp
 $Comp
 L power:+5V #PWR0120
 U 1 1 61C4F48E
-P 11750 9650
-F 0 "#PWR0120" H 11750 9500 50  0001 C CNN
-F 1 "+5V" H 11765 9823 50  0000 C CNN
-F 2 "" H 11750 9650 50  0001 C CNN
-F 3 "" H 11750 9650 50  0001 C CNN
-	1    11750 9650
+P 12350 9450
+F 0 "#PWR0120" H 12350 9300 50  0001 C CNN
+F 1 "+5V" H 12365 9623 50  0000 C CNN
+F 2 "" H 12350 9450 50  0001 C CNN
+F 3 "" H 12350 9450 50  0001 C CNN
+	1    12350 9450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -4426,8 +4379,6 @@ Text Label 4500 6800 0    50   ~ 0
 Rain(Led)
 Text Label 4500 6900 0    50   ~ 0
 Running(Led)
-Wire Wire Line
-	11750 10150 11750 12700
 Text Label 3000 6600 0    50   ~ 0
 Mode(Ext.)
 Text Label 3100 6700 0    50   ~ 0
@@ -4449,10 +4400,135 @@ Wire Wire Line
 	10250 2700 10400 2700
 Wire Wire Line
 	10250 4600 15200 4600
+$Comp
+L power:GND #PWR?
+U 1 1 5DC6F105
+P 7400 8050
+F 0 "#PWR?" H 7400 7800 50  0001 C CNN
+F 1 "GND" H 7405 7877 50  0000 C CNN
+F 2 "" H 7400 8050 50  0001 C CNN
+F 3 "" H 7400 8050 50  0001 C CNN
+	1    7400 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 8050 7400 8050
+$Comp
+L power:GND #PWR?
+U 1 1 5DDA45AB
+P 9400 2900
+F 0 "#PWR?" H 9400 2650 50  0001 C CNN
+F 1 "GND" H 9405 2727 50  0000 C CNN
+F 2 "" H 9400 2900 50  0001 C CNN
+F 3 "" H 9400 2900 50  0001 C CNN
+	1    9400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 2900 9400 2900
+Wire Wire Line
+	13400 1400 13400 2000
+Wire Wire Line
+	13400 2000 14700 2000
+Connection ~ 13400 2000
+Wire Wire Line
+	13400 2000 13400 3050
+$Comp
+L 74xx_IEEE:7404 U15
+U 2 1 5DB21B19
+P 9250 4000
+F 0 "U15" H 9250 4466 50  0000 C CNN
+F 1 "К155ЛН1" H 9250 4375 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 9250 4000 50  0001 C CNN
+F 3 "http://www.chipinfo.ru/dsheets/ic/155/ln1.html" H 9250 4000 50  0001 C CNN
+	2    9250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3600 8700 3600
+Wire Wire Line
+	8700 3600 8700 4000
+Wire Wire Line
+	9800 4000 9900 4000
+Wire Wire Line
+	10100 4000 10100 3100
+Wire Wire Line
+	10100 3100 9900 3100
+Connection ~ 9900 4000
+Wire Wire Line
+	9900 4000 9900 4700
+Wire Wire Line
+	9900 4000 10100 4000
+Text Notes 8200 8400 0    50   ~ 0
+TODO: Connect with reset :: Done
+$Comp
+L 74xx_IEEE:7408 U33
+U 4 1 5DA19BCE
+P 11150 9800
+F 0 "U33" H 11150 10216 50  0000 C CNN
+F 1 "К155ЛИ1" H 11150 10125 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 11150 9800 50  0001 C CNN
+F 3 "http://www.chipinfo.ru/dsheets/ic/155/li1.html" H 11150 9800 50  0001 C CNN
+	4    11150 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 8600 10500 8600
+Wire Wire Line
+	8200 8250 8200 8300
+Wire Wire Line
+	6300 8400 6500 8400
+Wire Wire Line
+	6500 8400 6500 8300
+Wire Wire Line
+	6500 8300 8200 8300
+Connection ~ 8200 8300
+Wire Wire Line
+	8200 8300 8200 8600
+Wire Wire Line
+	10600 9700 10500 9700
+Wire Wire Line
+	10500 9700 10500 8600
+Wire Wire Line
+	11150 10050 11150 10200
+Wire Wire Line
+	11150 10200 11750 10200
+Wire Wire Line
+	11750 10200 11750 12700
+Wire Wire Line
+	12150 8950 12150 9100
+Wire Wire Line
+	12150 9100 13200 9100
+Wire Wire Line
+	13200 9100 13200 12700
+Wire Wire Line
+	13000 9300 13000 9800
+Wire Wire Line
+	13000 9800 12900 9800
+Wire Wire Line
+	11400 9300 13000 9300
+Wire Wire Line
+	11800 9800 11700 9800
+Wire Wire Line
+	11750 12700 12350 12700
+Wire Wire Line
+	12350 10050 12350 12700
+Connection ~ 12350 12700
+Wire Wire Line
+	12350 12700 13200 12700
+Wire Wire Line
+	12350 9550 12350 9500
+Wire Wire Line
+	12350 9500 11150 9500
+Wire Wire Line
+	11150 9500 11150 9600
+Connection ~ 12350 9500
+Wire Wire Line
+	12350 9500 12350 9450
 Wire Bus Line
 	19050 1800 19050 2700
 Wire Bus Line
-	23050 1800 23050 11100
-Wire Bus Line
 	21650 1800 21650 11100
+Wire Bus Line
+	23050 1800 23050 11100
 $EndSCHEMATC
