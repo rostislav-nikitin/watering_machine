@@ -570,8 +570,6 @@ States
 Wire Wire Line
 	6100 5300 6400 5300
 Wire Wire Line
-	3000 1150 3700 1150
-Wire Wire Line
 	4400 12300 4400 12700
 Wire Wire Line
 	5500 6700 5500 9500
@@ -4106,31 +4104,6 @@ F 3 "" H 22750 11600 50  0001 C CNN
 	1    22750 11600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:USB_B J1
-U 1 1 5D78A0DF
-P 3300 2000
-F 0 "J1" H 3355 2467 50  0000 C CNN
-F 1 "USB_B_Micro" H 3355 2376 50  0000 C CNN
-F 2 "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal" H 3450 1950 50  0001 C CNN
-F 3 "~" H 3450 1950 50  0001 C CNN
-	1    3300 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 1800 3700 1800
-Wire Wire Line
-	3700 1800 3700 1150
-Connection ~ 3700 1150
-Wire Wire Line
-	3700 1150 6200 1150
-Wire Wire Line
-	3300 2400 3700 2400
-Wire Wire Line
-	3700 2400 3700 3000
-Wire Wire Line
-	3700 3000 4500 3000
-Connection ~ 4500 3000
 Wire Wire Line
 	3000 8700 3000 9700
 Wire Wire Line
@@ -4807,10 +4780,113 @@ Wire Wire Line
 	2300 5200 3900 5200
 Wire Wire Line
 	2300 5200 2300 5600
+$Comp
+L Connector:Barrel_Jack J0
+U 1 1 5DBF72F2
+P 950 1250
+F 0 "J0" H 1005 1575 50  0000 C CNN
+F 1 "Barrel_Jack" H 1005 1484 50  0000 C CNN
+F 2 "" H 1000 1210 50  0001 C CNN
+F 3 "~" H 1000 1210 50  0001 C CNN
+	1    950  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM317_3PinPackage U0
+U 1 1 5DCCB033
+P 2050 1150
+F 0 "U0" H 2050 1392 50  0000 C CNN
+F 1 "LM317_3PinPackage" H 2050 1301 50  0000 C CNN
+F 2 "" H 2050 1400 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 2050 1150 50  0001 C CNN
+	1    2050 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R_PWR_1
+U 1 1 5DCCB27C
+P 2450 1500
+F 0 "R_PWR_1" H 2518 1546 50  0000 L CNN
+F 1 "1.2KOhm" H 2518 1455 50  0000 L CNN
+F 2 "" V 2490 1490 50  0001 C CNN
+F 3 "~" H 2450 1500 50  0001 C CNN
+	1    2450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R_PWR_2
+U 1 1 5DCCB471
+P 2050 2000
+F 0 "R_PWR_2" H 2118 2046 50  0000 L CNN
+F 1 "3.3KOhm" H 2118 1955 50  0000 L CNN
+F 2 "" V 2090 1990 50  0001 C CNN
+F 3 "~" H 2050 2000 50  0001 C CNN
+	1    2050 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1150 2450 1150
+Connection ~ 3000 1150
+Wire Wire Line
+	2450 1350 2450 1150
+Connection ~ 2450 1150
+Wire Wire Line
+	2450 1150 3000 1150
+Wire Wire Line
+	2450 1650 2450 1750
+Wire Wire Line
+	2450 1750 2050 1750
+Wire Wire Line
+	2050 1750 2050 1450
+Wire Wire Line
+	2050 1850 2050 1750
+Connection ~ 2050 1750
+$Comp
+L power:GND #PWR?
+U 1 1 5E5F0246
+P 2050 2350
+F 0 "#PWR?" H 2050 2100 50  0001 C CNN
+F 1 "GND" H 2055 2177 50  0000 C CNN
+F 2 "" H 2050 2350 50  0001 C CNN
+F 3 "" H 2050 2350 50  0001 C CNN
+	1    2050 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1150 1500 1150
+Wire Wire Line
+	1250 1350 1450 1350
+Wire Wire Line
+	3000 1150 6200 1150
+Wire Wire Line
+	2050 2150 2050 2250
+Wire Wire Line
+	2050 2250 1450 2250
+Wire Wire Line
+	1450 1350 1450 2250
+Connection ~ 2050 2250
+Wire Wire Line
+	2050 2250 2050 2350
+$Comp
+L power:+24V #PWR?
+U 1 1 5F01EE2C
+P 1500 950
+F 0 "#PWR?" H 1500 800 50  0001 C CNN
+F 1 "+24V" H 1515 1123 50  0000 C CNN
+F 2 "" H 1500 950 50  0001 C CNN
+F 3 "" H 1500 950 50  0001 C CNN
+	1    1500 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 950  1500 1150
 Wire Bus Line
 	21450 1800 21450 2700
 Wire Bus Line
 	25450 1800 25450 11100
 Wire Bus Line
 	24050 1800 24050 11100
+Connection ~ 1500 1150
+Wire Wire Line
+	1500 1150 1750 1150
 $EndSCHEMATC
