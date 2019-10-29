@@ -4570,17 +4570,6 @@ Wire Wire Line
 	12500 6400 12700 6400
 Wire Wire Line
 	12700 6400 12700 6750
-$Comp
-L 74xx_IEEE:7410 U34
-U 3 1 676D34DD
-P 3150 3350
-F 0 "U34" H 3150 3766 50  0000 C CNN
-F 1 "К155ЛА4" H 3150 3675 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 3150 3350 50  0001 C CNN
-F 3 "http://www.chipinfo.ru/dsheets/ic/155/la4.html" H 3150 3350 50  0001 C CNN
-	3    3150 3350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6200 4500 4100 4500
 Wire Wire Line
@@ -4613,17 +4602,6 @@ F 3 "" H 3150 3050 50  0001 C CNN
 	1    3150 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2650 3250 2450 3250
-Wire Wire Line
-	2450 3250 2450 3100
-Wire Wire Line
-	2450 3100 3150 3100
-Wire Wire Line
-	3150 3100 3150 3050
-Wire Wire Line
-	3150 3150 3150 3100
-Connection ~ 3150 3100
 Wire Notes Line
 	8400 900  8400 5250
 Wire Notes Line
@@ -5249,10 +5227,39 @@ Wire Notes Line
 	1100 12600 8700 12600
 Wire Notes Line
 	1100 12600 1100 900 
+$Comp
+L 74xx_IEEE:7410 U34
+U 3 1 676D34DD
+P 3150 3350
+F 0 "U34" H 3150 3766 50  0000 C CNN
+F 1 "К155ЛА4" H 3150 3675 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 3150 3350 50  0001 C CNN
+F 3 "http://www.chipinfo.ru/dsheets/ic/155/la4.html" H 3150 3350 50  0001 C CNN
+	3    3150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3050 3150 3150
+Wire Wire Line
+	2650 3250 2500 3250
+Wire Wire Line
+	2500 3250 2500 2700
+Wire Wire Line
+	2500 2700 1200 2700
+Wire Wire Line
+	1200 2700 1200 5100
+Wire Wire Line
+	1200 5100 5600 5100
+Wire Wire Line
+	5600 5100 5600 5900
+Wire Wire Line
+	5600 5900 5500 5900
+Wire Wire Line
+	5500 5900 5500 6400
 Wire Bus Line
 	23050 1800 23050 2700
 Wire Bus Line
-	27050 1800 27050 11100
-Wire Bus Line
 	25650 1800 25650 11100
+Wire Bus Line
+	27050 1800 27050 11100
 $EndSCHEMATC
