@@ -1,3 +1,6 @@
 (sym_lib_table
   (lib (name circuit_design-rescue)(type Legacy)(uri ${KIPRJMOD}/circuit_design-rescue.lib)(options "")(descr ""))
+  (lib (name xl4015)(type Legacy)(uri /home/s0lid/Sources/watering_machine/src/circuit_design.kicad/third_party.libs/XL4015_step_down_converter/XL4015_converter_lib/xl4015.lib)(options "")(descr ""))
+  (lib (name xlsemi\)(type Legacy)(uri /home/s0lid/Sources/watering_machine/src/circuit_design.kicad/xlsemi/.lib)(options "")(descr ""))
+  (lib (name xlsemi)(type Legacy)(uri /home/s0lid/Sources/watering_machine/src/circuit_design.kicad/xlsemi.lib)(options "")(descr ""))
 )
