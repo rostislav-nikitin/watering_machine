@@ -615,8 +615,6 @@ Wire Wire Line
 Wire Notes Line
 	8800 5300 8800 11500
 Wire Wire Line
-	7600 1950 7800 1950
-Wire Wire Line
 	7600 2400 8150 2400
 Wire Wire Line
 	7600 2550 7950 2550
@@ -624,8 +622,6 @@ Wire Wire Line
 	6100 3000 6400 3000
 Wire Wire Line
 	6700 2400 6500 2400
-Wire Wire Line
-	6500 2400 6500 1400
 Wire Wire Line
 	11700 1500 11900 1500
 Wire Wire Line
@@ -2609,7 +2605,6 @@ Wire Wire Line
 	6500 2400 6500 2850
 Wire Wire Line
 	6500 2850 6700 2850
-Connection ~ 6500 2400
 Wire Wire Line
 	8600 3100 8600 5000
 Wire Wire Line
@@ -2643,8 +2638,6 @@ Connection ~ 8500 2300
 Wire Wire Line
 	8500 2300 8500 5100
 Wire Wire Line
-	6500 1400 9100 1400
-Wire Wire Line
 	7600 2850 7800 2850
 Wire Wire Line
 	7800 2850 7800 2100
@@ -2672,8 +2665,6 @@ Text Label 10150 1500 0    50   ~ 0
 Time.Second
 Text Label 10150 2200 0    50   ~ 0
 Time.Minute
-Wire Wire Line
-	7800 1950 7800 1150
 $Comp
 L Connector:Conn_01x02_Male CONN_SW_DPST_MODE_2
 U 1 1 5D683FEF
@@ -5332,7 +5323,7 @@ Connection ~ 5500 1800
 Wire Wire Line
 	5500 1800 5500 1700
 Wire Wire Line
-	5900 1150 7800 1150
+	5900 1150 7600 1150
 Wire Notes Line
 	8700 5300 6000 5300
 Wire Notes Line
@@ -5485,13 +5476,87 @@ Wire Wire Line
 Connection ~ 29950 21050
 Wire Wire Line
 	30700 21650 29950 21650
+Wire Wire Line
+	29950 21650 29950 21750
+Connection ~ 29950 21650
+Wire Wire Line
+	7600 2700 7700 2700
+Wire Wire Line
+	7700 2700 7700 1400
+Wire Wire Line
+	7700 1400 9100 1400
+Wire Wire Line
+	7600 1950 7600 1150
+$Comp
+L Device:C C?
+U 1 1 655D244E
+P 6550 6650
+F 0 "C?" H 6665 6696 50  0000 L CNN
+F 1 "474" H 6665 6605 50  0000 L CNN
+F 2 "" H 6588 6500 50  0001 C CNN
+F 3 "~" H 6550 6650 50  0001 C CNN
+	1    6550 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 655D28E5
+P 6650 7050
+F 0 "C?" H 6765 7096 50  0000 L CNN
+F 1 "474" H 6765 7005 50  0000 L CNN
+F 2 "" H 6688 6900 50  0001 C CNN
+F 3 "~" H 6650 7050 50  0001 C CNN
+	1    6650 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 656DB9E5
+P 6750 7450
+F 0 "C?" H 6865 7496 50  0000 L CNN
+F 1 "474" H 6865 7405 50  0000 L CNN
+F 2 "" H 6788 7300 50  0001 C CNN
+F 3 "~" H 6750 7450 50  0001 C CNN
+	1    6750 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 6500 6550 6500
+Connection ~ 6900 6500
+Wire Wire Line
+	7000 6600 6650 6600
+Wire Wire Line
+	6650 6600 6650 6900
+Connection ~ 7000 6600
+Wire Wire Line
+	6750 7300 6750 6700
+Wire Wire Line
+	6750 6700 7100 6700
+Connection ~ 7100 6700
+$Comp
+L power:GND #PWR?
+U 1 1 660333FB
+P 6650 7600
+F 0 "#PWR?" H 6650 7350 50  0001 C CNN
+F 1 "GND" H 6655 7427 50  0000 C CNN
+F 2 "" H 6650 7600 50  0001 C CNN
+F 3 "" H 6650 7600 50  0001 C CNN
+	1    6650 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 7200 6650 7600
+Wire Wire Line
+	6650 7600 6750 7600
+Wire Wire Line
+	6550 7600 6650 7600
+Connection ~ 6650 7600
+Wire Wire Line
+	6550 6800 6550 7600
 Wire Bus Line
 	23050 1800 23050 2700
 Wire Bus Line
 	27050 1800 27050 11100
 Wire Bus Line
 	25650 1800 25650 11100
-Wire Wire Line
-	29950 21650 29950 21750
-Connection ~ 29950 21650
 $EndSCHEMATC
