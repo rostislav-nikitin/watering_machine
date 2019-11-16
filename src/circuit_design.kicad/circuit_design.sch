@@ -5260,7 +5260,7 @@ Wire Wire Line
 	4700 1400 4700 1150
 Connection ~ 4700 1150
 Wire Wire Line
-	4700 1150 4300 1150
+	4700 1150 4650 1150
 Wire Wire Line
 	4700 1700 4700 2300
 Wire Wire Line
@@ -5553,6 +5553,19 @@ Wire Wire Line
 Connection ~ 6650 7600
 Wire Wire Line
 	6550 6800 6550 7600
+$Comp
+L Device:L L1
+U 1 1 666E0873
+P 4500 1150
+F 0 "L1" V 4690 1150 50  0000 C CNN
+F 1 "47 uH/5A" V 4599 1150 50  0000 C CNN
+F 2 "Inductor_SMD:L_7.3x7.3_H4.5" H 4500 1150 50  0001 C CNN
+F 3 "~" H 4500 1150 50  0001 C CNN
+	1    4500 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 1150 4300 1150
 Wire Bus Line
 	23050 1800 23050 2700
 Wire Bus Line
