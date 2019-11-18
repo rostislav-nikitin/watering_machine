@@ -119,11 +119,7 @@ Wire Wire Line
 	8150 4250 7950 4250
 Connection ~ 8150 3800
 Wire Wire Line
-	6650 4250 6250 4250
-Wire Wire Line
-	6250 4250 6250 3300
-Wire Wire Line
-	6250 3300 7950 3300
+	6650 4250 6350 4250
 Connection ~ 6650 4250
 Connection ~ 7950 3300
 Wire Wire Line
@@ -3124,12 +3120,12 @@ $EndComp
 $Comp
 L 74xx_IEEE:7404 U32
 U 3 1 5FAD1672
-P 1900 3350
-F 0 "U32" H 1900 3816 50  0000 C CNN
-F 1 "К155ЛН1" H 1900 3725 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1900 3350 50  0001 C CNN
-F 3 "http://www.chipinfo.ru/dsheets/ic/155/ln1.html" H 1900 3350 50  0001 C CNN
-	3    1900 3350
+P 1450 3850
+F 0 "U32" H 1450 4316 50  0000 C CNN
+F 1 "К155ЛН1" H 1450 4225 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1450 3850 50  0001 C CNN
+F 3 "http://www.chipinfo.ru/dsheets/ic/155/ln1.html" H 1450 3850 50  0001 C CNN
+	3    1450 3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -3187,17 +3183,6 @@ Wire Wire Line
 Connection ~ 12600 7350
 Wire Wire Line
 	12600 7350 13250 7350
-$Comp
-L power:+5V #PWR0105
-U 1 1 616989F4
-P 12850 1400
-F 0 "#PWR0105" H 12850 1250 50  0001 C CNN
-F 1 "+5V" H 12865 1573 50  0000 C CNN
-F 2 "" H 12850 1400 50  0001 C CNN
-F 3 "" H 12850 1400 50  0001 C CNN
-	1    12850 1400
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0106
 U 1 1 61699002
@@ -3322,12 +3307,12 @@ $EndComp
 $Comp
 L power:+5V #PWR0118
 U 1 1 61B6E5FE
-P 1900 3100
-F 0 "#PWR0118" H 1900 2950 50  0001 C CNN
-F 1 "+5V" H 1915 3273 50  0000 C CNN
-F 2 "" H 1900 3100 50  0001 C CNN
-F 3 "" H 1900 3100 50  0001 C CNN
-	1    1900 3100
+P 1450 3600
+F 0 "#PWR0118" H 1450 3450 50  0001 C CNN
+F 1 "+5V" H 1465 3773 50  0000 C CNN
+F 2 "" H 1450 3600 50  0001 C CNN
+F 3 "" H 1450 3600 50  0001 C CNN
+	1    1450 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -4280,8 +4265,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 2600 6200 2600
 Wire Wire Line
-	3750 3350 3650 3350
-Wire Wire Line
 	4300 4950 5600 4950
 Wire Wire Line
 	4300 4200 4300 4950
@@ -4308,23 +4291,10 @@ Wire Wire Line
 Wire Wire Line
 	4900 4150 5050 4150
 Wire Wire Line
-	5600 4250 5600 4950
+	5600 4250 5600 4400
 Connection ~ 5600 4950
 Wire Wire Line
 	5600 4950 6650 4950
-$Comp
-L power:+5V #PWR027
-U 1 1 61F1ACA5
-P 5600 3350
-F 0 "#PWR027" H 5600 3200 50  0001 C CNN
-F 1 "+5V" H 5615 3523 50  0000 C CNN
-F 2 "" H 5600 3350 50  0001 C CNN
-F 3 "" H 5600 3350 50  0001 C CNN
-	1    5600 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 3350 5600 3750
 $Comp
 L power:+5V #PWR028
 U 1 1 626F1CB2
@@ -4336,8 +4306,6 @@ F 3 "" H 9350 6150 50  0001 C CNN
 	1    9350 6150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6200 4000 6200 4500
 Wire Notes Line
 	8700 5300 8700 12600
 Wire Wire Line
@@ -4361,17 +4329,6 @@ Wire Wire Line
 Wire Wire Line
 	11800 6150 11200 6150
 $Comp
-L power:+5V #PWR029
-U 1 1 650B11F2
-P 11300 5400
-F 0 "#PWR029" H 11300 5250 50  0001 C CNN
-F 1 "+5V" H 11315 5573 50  0000 C CNN
-F 2 "" H 11300 5400 50  0001 C CNN
-F 3 "" H 11300 5400 50  0001 C CNN
-	1    11300 5400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR030
 U 1 1 650B1467
 P 11300 5900
@@ -4382,8 +4339,6 @@ F 3 "" H 11300 5900 50  0001 C CNN
 	1    11300 5900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 4000 6200 4000
 $Comp
 L 74xx_IEEE:7404 U32
 U 1 1 5DFD11DE
@@ -4414,43 +4369,23 @@ Wire Wire Line
 	10650 5800 10650 5450
 Wire Wire Line
 	10650 5450 11300 5450
-Connection ~ 11300 5450
-Wire Wire Line
-	11300 5450 11300 5400
 Wire Wire Line
 	12500 6400 12700 6400
 Wire Wire Line
 	12700 6400 12700 6750
 Wire Wire Line
-	6200 4500 4100 4500
-Wire Wire Line
-	2550 4500 2550 3450
-Wire Wire Line
-	2550 3450 2650 3450
+	2450 3950 2550 3950
 Wire Wire Line
 	6700 6400 7400 6400
-Wire Wire Line
-	2650 3350 2450 3350
 $Comp
 L power:GND #PWR025
 U 1 1 67DEA50F
-P 3150 3550
-F 0 "#PWR025" H 3150 3300 50  0001 C CNN
-F 1 "GND" H 3155 3377 50  0000 C CNN
-F 2 "" H 3150 3550 50  0001 C CNN
-F 3 "" H 3150 3550 50  0001 C CNN
-	1    3150 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR024
-U 1 1 67DEA6EE
-P 3150 3050
-F 0 "#PWR024" H 3150 2900 50  0001 C CNN
-F 1 "+5V" H 3165 3223 50  0000 C CNN
-F 2 "" H 3150 3050 50  0001 C CNN
-F 3 "" H 3150 3050 50  0001 C CNN
-	1    3150 3050
+P 3050 4800
+F 0 "#PWR025" H 3050 4550 50  0001 C CNN
+F 1 "GND" H 3055 4627 50  0000 C CNN
+F 2 "" H 3050 4800 50  0001 C CNN
+F 3 "" H 3050 4800 50  0001 C CNN
+	1    3050 4800
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -4489,11 +4424,6 @@ Wire Wire Line
 	3900 5600 3500 5600
 Wire Wire Line
 	3500 5950 4100 5950
-Wire Wire Line
-	4100 5950 4100 4500
-Connection ~ 4100 4500
-Wire Wire Line
-	4100 4500 2550 4500
 Wire Wire Line
 	5400 5600 5400 5300
 Wire Wire Line
@@ -4901,44 +4831,35 @@ Wire Wire Line
 Connection ~ 13500 7700
 Wire Wire Line
 	13500 7700 13500 7300
-Wire Wire Line
-	1300 5200 3700 5200
-Wire Wire Line
-	1300 3350 1350 3350
-Wire Wire Line
-	1300 3350 1300 5200
 Wire Notes Line
 	1100 12600 8700 12600
-Wire Notes Line
-	1100 12600 1100 900 
 $Comp
 L 74xx_IEEE:7410 U34
 U 3 1 676D34DD
-P 3150 3350
-F 0 "U34" H 3150 3766 50  0000 C CNN
-F 1 "К155ЛА4" H 3150 3675 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 3150 3350 50  0001 C CNN
-F 3 "http://www.chipinfo.ru/dsheets/ic/155/la4.html" H 3150 3350 50  0001 C CNN
-	3    3150 3350
+P 3050 3850
+F 0 "U34" H 3050 4266 50  0000 C CNN
+F 1 "К155ЛА4" H 3050 4175 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 3050 3850 50  0001 C CNN
+F 3 "http://www.chipinfo.ru/dsheets/ic/155/la4.html" H 3050 3850 50  0001 C CNN
+	3    3050 3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 3050 3150 3150
+	3050 3550 3050 3650
 Wire Wire Line
-	2650 3250 2500 3250
+	2550 3750 2400 3750
 Wire Wire Line
 	10800 12700 14700 12700
 Wire Wire Line
 	14700 12700 17200 12700
 Wire Wire Line
 	13500 9800 17000 9800
-Text Notes 1700 3750 0    50   ~ 0
+Text Notes 1600 4250 0    50   ~ 0
 11,10
 Wire Wire Line
-	2500 3250 2500 3050
+	2400 3750 2400 3550
 Wire Wire Line
-	2500 3050 3150 3050
-Connection ~ 3150 3050
+	2400 3550 3050 3550
 $Comp
 L Device:R_US R18
 U 1 1 5DD1C782
@@ -5151,8 +5072,6 @@ F 3 "http://www.xlsemi.com/datasheet/XL4015%20datasheet.pdf" H 3400 1200 50  000
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	1100 900  8400 900 
-Wire Notes Line
 	22800 900  8500 900 
 Connection ~ 1250 1000
 Wire Wire Line
@@ -5314,15 +5233,10 @@ Wire Notes Line
 Wire Notes Line
 	6000 900  6000 5300
 Wire Wire Line
-	1800 1200 1800 1300
-Wire Wire Line
 	1000 1000 1000 1200
 Wire Wire Line
 	1000 1400 1000 1600
 Connection ~ 1000 1600
-Connection ~ 1800 1300
-Wire Wire Line
-	1800 1300 1800 1550
 Connection ~ 1800 2300
 Connection ~ 2200 2300
 Wire Wire Line
@@ -5552,84 +5466,27 @@ $EndComp
 Wire Wire Line
 	4350 1150 4300 1150
 $Comp
-L Transistor_FET:2N7000 Q6
-U 1 1 5DE320B3
-P 2700 2550
-F 0 "Q6" H 2905 2596 50  0000 L CNN
-F 1 "2N7000" H 2905 2505 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2900 2475 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 2700 2550 50  0001 L CNN
-	1    2700 2550
-	0    1    1    0   
-$EndComp
-$Comp
-L Transistor_FET:BS250 Q5
-U 1 1 5DE3277B
-P 2300 2550
-F 0 "Q5" H 2505 2596 50  0000 L CNN
-F 1 "BS250" H 2505 2505 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2500 2475 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 2300 2550 50  0001 L CNN
-	1    2300 2550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2900 2650 3000 2650
-Wire Wire Line
-	3000 2650 3000 2350
-Wire Wire Line
-	3000 2350 2700 2350
-Wire Wire Line
-	2700 2350 2300 2350
-Connection ~ 2700 2350
-$Comp
 L power:GND #PWR026
 U 1 1 5EE38548
-P 1500 2650
-F 0 "#PWR026" H 1500 2400 50  0001 C CNN
-F 1 "GND" H 1505 2477 50  0000 C CNN
-F 2 "" H 1500 2650 50  0001 C CNN
-F 3 "" H 1500 2650 50  0001 C CNN
-	1    1500 2650
-	0    1    1    0   
+P 1400 3150
+F 0 "#PWR026" H 1400 2900 50  0001 C CNN
+F 1 "GND" H 1405 2977 50  0000 C CNN
+F 2 "" H 1400 3150 50  0001 C CNN
+F 3 "" H 1400 3150 50  0001 C CNN
+	1    1400 3150
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 2650 1600 2650
-Wire Wire Line
-	2000 2650 2100 2650
-Wire Wire Line
-	2500 2650 2500 2850
-Connection ~ 2500 2650
-Wire Wire Line
-	2500 2850 3700 2850
-Wire Wire Line
-	4300 2850 6300 2850
+	4300 2850 5600 2850
 Wire Wire Line
 	6300 2850 6300 1400
 Wire Wire Line
 	6300 1400 6500 1400
 Connection ~ 4300 2850
 Wire Wire Line
-	3000 2650 3500 2650
-Wire Wire Line
-	3500 2650 3500 2500
-Wire Wire Line
-	3500 2500 6100 2500
-Wire Wire Line
-	6100 2500 6100 1150
-Wire Wire Line
 	6100 1150 5900 1150
-Connection ~ 3000 2650
-Wire Notes Line
-	1200 2350 3200 2350
-Wire Notes Line
-	3200 2350 3200 2950
-Wire Notes Line
-	3200 2950 1200 2950
-Wire Notes Line
-	1200 2950 1200 2350
 Text Notes 1300 2500 0    50   ~ 0
-RTC power supply/battery swith
+RTC power supply/battery switch
 $Comp
 L Device:C C8
 U 1 1 600CC9B5
@@ -5664,7 +5521,6 @@ F 3 "~" H 3700 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3700 3550 3700 2850
-Connection ~ 3700 2850
 Wire Wire Line
 	3700 2850 4300 2850
 Wire Wire Line
@@ -5675,27 +5531,222 @@ Connection ~ 4300 4950
 $Comp
 L dk_Battery-Holders-Clips-Contacts:BS-7 BAT1
 U 1 1 60D34CA3
-P 1800 2650
-F 0 "BAT1" H 1928 2703 60  0000 L CNN
-F 1 "BS-7" H 1928 2597 60  0000 L CNN
-F 2 "digikey-footprints:Battery_Holder_Coin_2032_BS-7" H 2000 2850 60  0001 L CNN
-F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 2000 2950 60  0001 L CNN
-F 4 "BS-7-ND" H 2000 3050 60  0001 L CNN "Digi-Key_PN"
-F 5 "BS-7" H 2000 3150 60  0001 L CNN "MPN"
-F 6 "Battery Products" H 2000 3250 60  0001 L CNN "Category"
-F 7 "Battery Holders, Clips, Contacts" H 2000 3350 60  0001 L CNN "Family"
-F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 2000 3450 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 2000 3550 60  0001 L CNN "DK_Detail_Page"
-F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 2000 3650 60  0001 L CNN "Description"
-F 11 "MPD (Memory Protection Devices)" H 2000 3750 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 2000 3850 60  0001 L CNN "Status"
-	1    1800 2650
+P 1650 3050
+F 0 "BAT1" V 1363 3050 60  0000 C CNN
+F 1 "BS-7" V 1469 3050 60  0000 C CNN
+F 2 "digikey-footprints:Battery_Holder_Coin_2032_BS-7" H 1850 3250 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 1850 3350 60  0001 L CNN
+F 4 "BS-7-ND" H 1850 3450 60  0001 L CNN "Digi-Key_PN"
+F 5 "BS-7" H 1850 3550 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 1850 3650 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 1850 3750 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 1850 3850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 1850 3950 60  0001 L CNN "DK_Detail_Page"
+F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 1850 4050 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 1850 4150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1850 4250 60  0001 L CNN "Status"
+	1    1650 3050
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	3050 3550 3050 3350
+Connection ~ 3050 3550
+Wire Wire Line
+	5600 2850 5600 3600
+Connection ~ 5600 2850
+Wire Wire Line
+	5600 2850 6300 2850
+Text GLabel 3000 3200 2    50   Input ~ 0
+PWR_ALW
+Wire Wire Line
+	3150 2850 3700 2850
+Connection ~ 3700 2850
+Wire Wire Line
+	12850 1400 12850 1150
+Text GLabel 12950 1150 2    50   Input ~ 0
+PWR_ALW
+Wire Wire Line
+	12950 1150 12850 1150
+Wire Wire Line
+	11300 5450 11650 5450
+Connection ~ 11300 5450
+Text GLabel 11650 5450 2    50   Input ~ 0
+PWR_ALW
+$Comp
+L Device:C C10
+U 1 1 62C3291E
+P 6200 3750
+F 0 "C10" H 6315 3796 50  0000 L CNN
+F 1 "105" H 6315 3705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 6238 3600 50  0001 C CNN
+F 3 "~" H 6200 3750 50  0001 C CNN
+	1    6200 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 3600
+Wire Wire Line
+	5600 3600 5600 3750
+Wire Wire Line
+	6350 4250 6350 3300
+Wire Wire Line
+	6350 3300 7950 3300
+Wire Wire Line
+	6100 4000 6100 4500
+Wire Wire Line
+	6100 4500 4100 4500
+Wire Wire Line
+	5600 3600 6200 3600
+Wire Wire Line
+	5600 4400 6200 4400
+Wire Wire Line
+	6200 4400 6200 3900
+Connection ~ 5600 4400
+Wire Wire Line
+	5600 4400 5600 4950
+$Comp
+L Device:C C9
+U 1 1 63D5DAFA
+P 2100 4200
+F 0 "C9" H 2215 4246 50  0000 L CNN
+F 1 "105" H 2215 4155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 2138 4050 50  0001 C CNN
+F 3 "~" H 2100 4200 50  0001 C CNN
+	1    2100 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  3850 750  5200
+Wire Wire Line
+	2100 4050 2100 3550
+Wire Wire Line
+	2100 3550 2400 3550
+Connection ~ 2400 3550
+Wire Wire Line
+	2100 4350 2100 4600
+Wire Wire Line
+	3050 4600 3050 4800
+Wire Wire Line
+	2100 4600 3050 4600
+Wire Wire Line
+	3050 4600 3050 4050
+Connection ~ 3050 4600
+$Comp
+L dynacore:AOP605 U7
+U 1 1 5E0A8C78
+P 2550 2650
+F 0 "U7" H 2550 2815 50  0000 C CNN
+F 1 "AOP605" H 2550 2724 50  0000 C CNN
+F 2 "" H 2550 2850 50  0001 C CNN
+F 3 "" H 2550 2850 50  0001 C CNN
+	1    2550 2650
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1200 2350 3200 2350
+Wire Wire Line
+	6100 2450 6100 1150
+Wire Wire Line
+	2200 3050 1850 3050
+Wire Wire Line
+	750  5200 3700 5200
+Wire Wire Line
+	3550 3850 3600 3850
+Wire Wire Line
+	3600 3850 3600 3350
+Wire Wire Line
+	3600 3350 3750 3350
+Wire Wire Line
+	2900 2900 3000 2900
+Wire Wire Line
+	3000 2900 3000 2750
+Wire Wire Line
+	3000 2750 2900 2750
+Wire Wire Line
+	3000 2750 3000 2450
+Connection ~ 3000 2750
+Wire Wire Line
+	3000 2450 6100 2450
+Wire Wire Line
+	2200 2900 2100 2900
+Wire Wire Line
+	2100 2900 2100 2450
+Wire Wire Line
+	2100 2450 3000 2450
+Connection ~ 3000 2450
+Wire Wire Line
+	2200 2750 1900 2750
+Wire Wire Line
+	1900 2750 1900 3350
+Wire Wire Line
+	1900 3350 3000 3350
+Wire Wire Line
+	2900 3050 3000 3050
+Wire Wire Line
+	3000 3050 3000 3200
+Wire Wire Line
+	3000 3200 2900 3200
+Wire Wire Line
+	3000 3200 3000 3350
+Connection ~ 3000 3200
+Connection ~ 3000 3350
+Wire Wire Line
+	3000 3350 3050 3350
+Wire Wire Line
+	3150 2850 3150 3550
+Wire Wire Line
+	3150 3550 3050 3550
+Wire Wire Line
+	2100 2900 2100 3200
+Wire Wire Line
+	2100 3200 2200 3200
+Connection ~ 2100 2900
+Wire Notes Line
+	1200 3400 3200 3400
+Wire Notes Line
+	3200 2350 3200 3400
+Wire Notes Line
+	1200 2350 1200 3400
+Wire Wire Line
+	2450 5100 4100 5100
+Connection ~ 4100 5100
+Wire Wire Line
+	4100 5100 4100 5950
+Wire Wire Line
+	2450 3950 2450 5100
+Wire Wire Line
+	4100 4500 4100 5100
+Wire Wire Line
+	1400 3050 1450 3050
+Wire Wire Line
+	1400 3050 1400 3150
+Connection ~ 1800 1300
+Wire Wire Line
+	1800 1300 1800 1550
+Wire Wire Line
+	1800 1200 1800 1300
+Wire Notes Line
+	1100 900  8400 900 
+Wire Notes Line
+	1100 900  1100 13100
+Wire Wire Line
+	2000 3850 2550 3850
+Wire Wire Line
+	900  3850 750  3850
 Wire Bus Line
 	23050 1800 23050 2700
 Wire Bus Line
-	25650 1800 25650 11100
-Wire Bus Line
 	27050 1800 27050 11100
+Wire Bus Line
+	25650 1800 25650 11100
+$Comp
+L power:GND #PWR024
+U 1 1 657F885A
+P 1450 4100
+F 0 "#PWR024" H 1450 3850 50  0001 C CNN
+F 1 "GND" H 1455 3927 50  0000 C CNN
+F 2 "" H 1450 4100 50  0001 C CNN
+F 3 "" H 1450 4100 50  0001 C CNN
+	1    1450 4100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
