@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name circuit_design)(type KiCad)(uri /home/s0lid/Sources/watering_machine/src/circuit_design.kicad)(options "")(descr ""))
+  (lib (name digikey-footprints)(type KiCad)(uri ${LOGO}/third_party.libs/digikey/digikey-footprints.pretty)(options "")(descr ""))
 )

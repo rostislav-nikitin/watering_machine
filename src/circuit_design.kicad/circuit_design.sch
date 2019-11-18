@@ -5573,17 +5573,6 @@ F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 2300 2550 50  0001 L CNN
 	1    2300 2550
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:Battery BT1
-U 1 1 5DF425B0
-P 1800 2650
-F 0 "BT1" H 1908 2696 50  0000 L CNN
-F 1 "Battery" H 1908 2605 50  0000 L CNN
-F 2 "" V 1800 2710 50  0001 C CNN
-F 3 "~" V 1800 2710 50  0001 C CNN
-	1    1800 2650
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2900 2650 3000 2650
 Wire Wire Line
@@ -5647,7 +5636,7 @@ U 1 1 600CC9B5
 P 6500 1750
 F 0 "C8" H 6615 1796 50  0000 L CNN
 F 1 "105" H 6615 1705 50  0000 L CNN
-F 2 "" H 6538 1600 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 6538 1600 50  0001 C CNN
 F 3 "~" H 6500 1750 50  0001 C CNN
 	1    6500 1750
 	1    0    0    -1  
@@ -5668,7 +5657,7 @@ U 1 1 6053B80E
 P 3700 3700
 F 0 "C7" H 3815 3746 50  0000 L CNN
 F 1 "105" H 3815 3655 50  0000 L CNN
-F 2 "" H 3738 3550 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 3738 3550 50  0001 C CNN
 F 3 "~" H 3700 3700 50  0001 C CNN
 	1    3700 3700
 	1    0    0    -1  
@@ -5682,11 +5671,31 @@ Wire Wire Line
 	4300 4950 3700 4950
 Wire Wire Line
 	3700 4950 3700 3850
+Connection ~ 4300 4950
+$Comp
+L dk_Battery-Holders-Clips-Contacts:BS-7 BAT1
+U 1 1 60D34CA3
+P 1800 2650
+F 0 "BAT1" H 1928 2703 60  0000 L CNN
+F 1 "BS-7" H 1928 2597 60  0000 L CNN
+F 2 "digikey-footprints:Battery_Holder_Coin_2032_BS-7" H 2000 2850 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 2000 2950 60  0001 L CNN
+F 4 "BS-7-ND" H 2000 3050 60  0001 L CNN "Digi-Key_PN"
+F 5 "BS-7" H 2000 3150 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 2000 3250 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 2000 3350 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 2000 3450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 2000 3550 60  0001 L CNN "DK_Detail_Page"
+F 10 "BATTERY HOLDER COIN 20MM PC PIN" H 2000 3650 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 2000 3750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2000 3850 60  0001 L CNN "Status"
+	1    1800 2650
+	0    1    1    0   
+$EndComp
 Wire Bus Line
 	23050 1800 23050 2700
 Wire Bus Line
 	25650 1800 25650 11100
 Wire Bus Line
 	27050 1800 27050 11100
-Connection ~ 4300 4950
 $EndSCHEMATC
