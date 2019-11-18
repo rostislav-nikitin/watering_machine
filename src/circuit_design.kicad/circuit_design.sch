@@ -4234,19 +4234,6 @@ Wire Wire Line
 Connection ~ 8000 2100
 Wire Wire Line
 	8000 2100 9100 2100
-$Comp
-L power:+5V #PWR026
-U 1 1 5EC382FA
-P 4050 2850
-F 0 "#PWR026" H 4050 2700 50  0001 C CNN
-F 1 "+5V" H 4065 3023 50  0000 C CNN
-F 2 "" H 4050 2850 50  0001 C CNN
-F 3 "" H 4050 2850 50  0001 C CNN
-	1    4050 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 2850 4300 2850
 Wire Wire Line
 	4300 2850 4300 3000
 Text Notes 450  1150 0    50   ~ 0
@@ -5322,8 +5309,6 @@ Wire Wire Line
 Connection ~ 5500 1800
 Wire Wire Line
 	5500 1800 5500 1700
-Wire Wire Line
-	5900 1150 7600 1150
 Wire Notes Line
 	8700 5300 6000 5300
 Wire Notes Line
@@ -5486,7 +5471,7 @@ Wire Wire Line
 Wire Wire Line
 	7700 1400 9100 1400
 Wire Wire Line
-	7600 1950 7600 1150
+	7600 1950 7600 1400
 $Comp
 L Device:C C4
 U 1 1 655D244E
@@ -5566,10 +5551,142 @@ F 3 "~" H 4500 1150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4350 1150 4300 1150
+$Comp
+L Transistor_FET:2N7000 Q6
+U 1 1 5DE320B3
+P 2700 2550
+F 0 "Q6" H 2905 2596 50  0000 L CNN
+F 1 "2N7000" H 2905 2505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2900 2475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7000.pdf" H 2700 2550 50  0001 L CNN
+	1    2700 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:BS250 Q5
+U 1 1 5DE3277B
+P 2300 2550
+F 0 "Q5" H 2505 2596 50  0000 L CNN
+F 1 "BS250" H 2505 2505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2500 2475 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 2300 2550 50  0001 L CNN
+	1    2300 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 5DF425B0
+P 1800 2650
+F 0 "BT1" H 1908 2696 50  0000 L CNN
+F 1 "Battery" H 1908 2605 50  0000 L CNN
+F 2 "" V 1800 2710 50  0001 C CNN
+F 3 "~" V 1800 2710 50  0001 C CNN
+	1    1800 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 2650 3000 2650
+Wire Wire Line
+	3000 2650 3000 2350
+Wire Wire Line
+	3000 2350 2700 2350
+Wire Wire Line
+	2700 2350 2300 2350
+Connection ~ 2700 2350
+$Comp
+L power:GND #PWR026
+U 1 1 5EE38548
+P 1500 2650
+F 0 "#PWR026" H 1500 2400 50  0001 C CNN
+F 1 "GND" H 1505 2477 50  0000 C CNN
+F 2 "" H 1500 2650 50  0001 C CNN
+F 3 "" H 1500 2650 50  0001 C CNN
+	1    1500 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 2650 1600 2650
+Wire Wire Line
+	2000 2650 2100 2650
+Wire Wire Line
+	2500 2650 2500 2850
+Connection ~ 2500 2650
+Wire Wire Line
+	2500 2850 3700 2850
+Wire Wire Line
+	4300 2850 6300 2850
+Wire Wire Line
+	6300 2850 6300 1400
+Wire Wire Line
+	6300 1400 6500 1400
+Connection ~ 4300 2850
+Wire Wire Line
+	3000 2650 3500 2650
+Wire Wire Line
+	3500 2650 3500 2500
+Wire Wire Line
+	3500 2500 6100 2500
+Wire Wire Line
+	6100 2500 6100 1150
+Wire Wire Line
+	6100 1150 5900 1150
+Connection ~ 3000 2650
+Wire Notes Line
+	1200 2350 3200 2350
+Wire Notes Line
+	3200 2350 3200 2950
+Wire Notes Line
+	3200 2950 1200 2950
+Wire Notes Line
+	1200 2950 1200 2350
+Text Notes 1300 2500 0    50   ~ 0
+RTC power supply/battery swith
+$Comp
+L Device:C C8
+U 1 1 600CC9B5
+P 6500 1750
+F 0 "C8" H 6615 1796 50  0000 L CNN
+F 1 "105" H 6615 1705 50  0000 L CNN
+F 2 "" H 6538 1600 50  0001 C CNN
+F 3 "~" H 6500 1750 50  0001 C CNN
+	1    6500 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1600 6500 1400
+Connection ~ 6500 1400
+Wire Wire Line
+	6500 1400 7600 1400
+Wire Wire Line
+	6500 1900 6400 1900
+Wire Wire Line
+	6400 1900 6400 2550
+Connection ~ 6400 2550
+$Comp
+L Device:C C7
+U 1 1 6053B80E
+P 3700 3700
+F 0 "C7" H 3815 3746 50  0000 L CNN
+F 1 "105" H 3815 3655 50  0000 L CNN
+F 2 "" H 3738 3550 50  0001 C CNN
+F 3 "~" H 3700 3700 50  0001 C CNN
+	1    3700 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3550 3700 2850
+Connection ~ 3700 2850
+Wire Wire Line
+	3700 2850 4300 2850
+Wire Wire Line
+	4300 4950 3700 4950
+Wire Wire Line
+	3700 4950 3700 3850
 Wire Bus Line
 	23050 1800 23050 2700
 Wire Bus Line
-	27050 1800 27050 11100
-Wire Bus Line
 	25650 1800 25650 11100
+Wire Bus Line
+	27050 1800 27050 11100
+Connection ~ 4300 4950
 $EndSCHEMATC
