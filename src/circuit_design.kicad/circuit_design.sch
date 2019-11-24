@@ -5357,7 +5357,7 @@ Wire Wire Line
 Connection ~ 7000 2850
 Wire Wire Line
 	7000 2850 7700 2850
-Text GLabel 3600 8600 2    50   Input ~ 0
+Text GLabel 4450 8800 2    50   Input ~ 0
 PWR_ALW
 Wire Wire Line
 	14250 1400 14250 1150
@@ -5531,17 +5531,6 @@ F 3 "" H 3650 3150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 4500 5500 11100
-$Comp
-L Regulator_Linear:LM7805_TO220 U38
-U 1 1 5DF02722
-P 7050 1150
-F 0 "U38" H 7050 1392 50  0000 C CNN
-F 1 "LM7805_TO220" H 7050 1301 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7050 1375 50  0001 C CIN
-F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 7050 1100 50  0001 C CNN
-	1    7050 1150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Regulator_SwitchedCapacitor:ICL7660 U8
 U 1 1 5DF02EDA
@@ -5797,12 +5786,12 @@ Wire Wire Line
 $Comp
 L Diode:1N5817 D10
 U 1 1 6F7A196D
-P 3800 8800
-F 0 "D10" H 3800 9016 50  0000 C CNN
-F 1 "1N5817" H 3800 8925 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3800 8625 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 3800 8800 50  0001 C CNN
-	1    3800 8800
+P 3350 8800
+F 0 "D10" H 3350 9016 50  0000 C CNN
+F 1 "1N5817" H 3350 8925 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3350 8625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 3350 8800 50  0001 C CNN
+	1    3350 8800
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -5819,21 +5808,16 @@ $EndComp
 $Comp
 L Diode:1N4007 D9
 U 1 1 7097A9D4
-P 3350 8800
-F 0 "D9" H 3350 9016 50  0000 C CNN
-F 1 "1N4007" H 3350 8925 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3350 8625 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3350 8800 50  0001 C CNN
-	1    3350 8800
+P 3800 8800
+F 0 "D9" H 3800 9016 50  0000 C CNN
+F 1 "1N4007" H 3800 8925 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3800 8625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3800 8800 50  0001 C CNN
+	1    3800 8800
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5600 5300 5600 12000
-Wire Wire Line
-	21100 1500 21100 1400
-Wire Wire Line
-	21100 1400 20400 1400
-Connection ~ 20400 1400
 $Comp
 L power:GND #PWR038
 U 1 1 74D59494
@@ -5847,8 +5831,6 @@ F 3 "" H 2000 9950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3950 8800 4450 8800
-Wire Wire Line
-	4450 2450 4450 8800
 Wire Wire Line
 	2550 5750 2500 5750
 Wire Wire Line
@@ -6204,7 +6186,6 @@ Wire Wire Line
 	4450 9300 4450 10000
 Wire Wire Line
 	3500 8800 3650 8800
-Connection ~ 4450 8800
 Wire Wire Line
 	4450 8800 4450 9300
 Wire Wire Line
@@ -6214,11 +6195,6 @@ Wire Wire Line
 Connection ~ 2400 8500
 Wire Wire Line
 	2400 8500 4200 8500
-Wire Wire Line
-	3600 8600 3500 8600
-Wire Wire Line
-	3500 8600 3500 8800
-Connection ~ 3500 8800
 Wire Wire Line
 	3500 9300 2000 9300
 Connection ~ 3500 9300
@@ -6253,12 +6229,39 @@ Wire Notes Line
 	2550 1900 600  1900
 Wire Notes Line
 	4600 2400 4600 9200
+Text Notes 650  650  0    50   ~ 0
+Power Supply
+$Comp
+L Regulator_Linear:LM7806_TO220 U38
+U 1 1 5DF1953A
+P 7050 1150
+F 0 "U38" H 7050 1392 50  0000 C CNN
+F 1 "LM7806_TO220" H 7050 1301 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7050 1375 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 7050 1100 50  0001 C CNN
+	1    7050 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D11
+U 1 1 5E3995FD
+P 4450 8200
+F 0 "D11" H 4450 8416 50  0000 C CNN
+F 1 "1N4007" H 4450 8325 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4450 8025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4450 8200 50  0001 C CNN
+	1    4450 8200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 8800 4450 8350
+Connection ~ 4450 8800
+Wire Wire Line
+	4450 8050 4450 2450
 Wire Bus Line
 	24450 1800 24450 2700
 Wire Bus Line
-	27050 1800 27050 11100
-Wire Bus Line
 	28450 1800 28450 11100
-Text Notes 650  650  0    50   ~ 0
-Power Supply
+Wire Bus Line
+	27050 1800 27050 11100
 $EndSCHEMATC
