@@ -6258,6 +6258,29 @@ Wire Wire Line
 Connection ~ 4450 8800
 Wire Wire Line
 	4450 8050 4450 2450
+$Comp
+L Diode:1N4007 D12
+U 1 1 5DF215BA
+P 7650 1150
+F 0 "D12" H 7650 1366 50  0000 C CNN
+F 1 "1N4007" H 7650 1275 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7650 975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7650 1150 50  0001 C CNN
+	1    7650 1150
+	-1   0    0    1   
+$EndComp
+Connection ~ 7500 1150
+$Comp
+L power:+5V #PWR044
+U 1 1 5E3888E0
+P 7800 1150
+F 0 "#PWR044" H 7800 1000 50  0001 C CNN
+F 1 "+5V" H 7815 1323 50  0000 C CNN
+F 2 "" H 7800 1150 50  0001 C CNN
+F 3 "" H 7800 1150 50  0001 C CNN
+	1    7800 1150
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	24450 1800 24450 2700
 Wire Bus Line
