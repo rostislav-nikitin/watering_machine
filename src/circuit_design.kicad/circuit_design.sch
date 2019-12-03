@@ -417,17 +417,6 @@ Wire Wire Line
 Connection ~ 10450 7350
 Text Label 16500 9100 0    50   ~ 0
 Next(Out)
-$Comp
-L 74xx_IEEE:7410 U34
-U 1 1 5D78A97B
-P 3750 4100
-F 0 "U34" H 3750 4516 50  0000 C CNN
-F 1 "К155ЛА4" H 3750 4425 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 3750 4100 50  0001 C CNN
-F 3 "http://www.chipinfo.ru/dsheets/ic/155/la4.html" H 3750 4100 50  0001 C CNN
-	1    3750 4100
-	1    0    0    -1  
-$EndComp
 Text Label 10350 11300 0    50   ~ 0
 Completed(In)
 Wire Wire Line
@@ -726,17 +715,6 @@ Wire Wire Line
 	11800 800  11800 900 
 Wire Wire Line
 	12600 800  12600 1150
-$Comp
-L 74xx_IEEE:7420 U12
-U 1 1 5D938472
-P 14250 1650
-F 0 "U12" H 14225 2116 50  0000 C CNN
-F 1 "К155ЛА1" H 14225 2025 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 14250 1650 50  0001 C CNN
-F 3 "http://www.chipinfo.ru/dsheets/ic/155/la1.html" H 14250 1650 50  0001 C CNN
-	1    14250 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	13300 1500 13600 1500
 Connection ~ 13300 1500
@@ -3584,21 +3562,8 @@ Wire Wire Line
 	14650 2000 14250 2000
 Wire Wire Line
 	14250 2000 14250 2050
-$Comp
-L power:GND #PWR0146
-U 1 1 5E92E453
-P 13700 1950
-F 0 "#PWR0146" H 13700 1700 50  0001 C CNN
-F 1 "GND" H 13705 1777 50  0000 C CNN
-F 2 "" H 13700 1950 50  0001 C CNN
-F 3 "" H 13700 1950 50  0001 C CNN
-	1    13700 1950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	14250 1900 14250 1950
-Wire Wire Line
-	14250 1950 13700 1950
 $Comp
 L power:+5V #PWR0147
 U 1 1 5EA8D4A6
@@ -4201,25 +4166,12 @@ F 3 "https:__eandc.ru_pdf_mikroskhema_k155tl2.pdf" H 7550 6400 50  0001 C CNN
 	1    7550 6400
 	1    0    0    -1  
 $EndComp
-$Comp
-L 74xx_IEEE:7420 U12
-U 2 1 607E97CB
-P 7000 4000
-F 0 "U12" H 6975 4466 50  0000 C CNN
-F 1 "К155ЛА1" H 6975 4375 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 7000 4000 50  0001 C CNN
-F 3 "http://www.chipinfo.ru/dsheets/ic/155/la1.html" H 7000 4000 50  0001 C CNN
-	2    7000 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 2600 5050 3200
 Wire Wire Line
 	5050 3200 5150 3200
 Wire Wire Line
 	5050 2600 7600 2600
-Wire Wire Line
-	5700 4950 7000 4950
 Wire Wire Line
 	5700 4200 5700 4950
 Wire Wire Line
@@ -4244,9 +4196,6 @@ Wire Wire Line
 	6300 3850 6300 4150
 Wire Wire Line
 	6300 4150 6450 4150
-Connection ~ 7000 4950
-Wire Wire Line
-	7000 4950 8050 4950
 $Comp
 L power:+5V #PWR028
 U 1 1 626F1CB2
@@ -4279,17 +4228,6 @@ Wire Wire Line
 Wire Wire Line
 	13200 6150 12600 6150
 $Comp
-L power:GND #PWR030
-U 1 1 650B1467
-P 12700 5900
-F 0 "#PWR030" H 12700 5650 50  0001 C CNN
-F 1 "GND" H 12705 5727 50  0000 C CNN
-F 2 "" H 12700 5900 50  0001 C CNN
-F 3 "" H 12700 5900 50  0001 C CNN
-	1    12700 5900
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74xx_IEEE:7404 U32
 U 1 1 5DFD11DE
 P 11850 6400
@@ -4300,42 +4238,12 @@ F 3 "http://www.chipinfo.ru/dsheets/ic/155/ln1.html" H 11850 6400 50  0001 C CNN
 	1    11850 6400
 	1    0    0    -1  
 $EndComp
-$Comp
-L 74xx_IEEE:7410 U34
-U 2 1 66856E67
-P 12700 5700
-F 0 "U34" H 12700 6116 50  0000 C CNN
-F 1 "К155ЛА4" H 12700 6025 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 12700 5700 50  0001 C CNN
-F 3 "http://www.chipinfo.ru/dsheets/ic/155/la4.html" H 12700 5700 50  0001 C CNN
-	2    12700 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12700 5500 12700 5450
-Wire Wire Line
-	12200 5800 12050 5800
-Wire Wire Line
-	12050 5800 12050 5450
-Wire Wire Line
-	12050 5450 12700 5450
 Wire Wire Line
 	13900 6400 14100 6400
 Wire Wire Line
 	14100 6400 14100 6750
 Wire Wire Line
 	8100 6400 8800 6400
-$Comp
-L power:GND #PWR025
-U 1 1 67DEA50F
-P 4450 10700
-F 0 "#PWR025" H 4450 10450 50  0001 C CNN
-F 1 "GND" H 4455 10527 50  0000 C CNN
-F 2 "" H 4450 10700 50  0001 C CNN
-F 3 "" H 4450 10700 50  0001 C CNN
-	1    4450 10700
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	7400 5250 9800 5250
 Text Notes 5900 2750 0    50   ~ 0
@@ -4759,17 +4667,6 @@ Wire Wire Line
 Wire Wire Line
 	6900 5500 12000 5500
 Connection ~ 14900 7700
-$Comp
-L 74xx_IEEE:7410 U34
-U 3 1 676D34DD
-P 4450 10500
-F 0 "U34" H 4450 10916 50  0000 C CNN
-F 1 "К155ЛА4" H 4450 10825 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 4450 10500 50  0001 C CNN
-F 3 "http://www.chipinfo.ru/dsheets/ic/155/la4.html" H 4450 10500 50  0001 C CNN
-	3    4450 10500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	12200 12700 16100 12700
 Wire Wire Line
@@ -4987,8 +4884,6 @@ F 3 "http://www.xlsemi.com/datasheet/XL4015%20datasheet.pdf" H 4650 1200 50  000
 	1    4650 1050
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	24200 900  9900 900 
 Connection ~ 2700 1000
 Wire Wire Line
 	2700 1000 2950 1000
@@ -5338,27 +5233,13 @@ $EndComp
 Wire Wire Line
 	5300 1150 5250 1150
 Wire Wire Line
-	5700 2850 7000 2850
-Wire Wire Line
 	7700 2850 7700 1400
 Connection ~ 5700 2850
 Wire Wire Line
 	6750 1150 6550 1150
-Connection ~ 7000 2850
-Wire Wire Line
-	7000 2850 7700 2850
 Text GLabel 4450 8800 2    50   Input ~ 0
 PWR_ALW
-Wire Wire Line
-	14250 1400 14250 1150
-Text GLabel 14350 1150 2    50   Input ~ 0
-PWR_ALW
-Wire Wire Line
-	14350 1150 14250 1150
-Wire Wire Line
-	12700 5450 13050 5450
-Connection ~ 12700 5450
-Text GLabel 13050 5450 2    50   Input ~ 0
+Text GLabel 12200 5950 2    50   Input ~ 0
 PWR_ALW
 Wire Wire Line
 	7750 4250 7750 3300
@@ -5369,12 +5250,12 @@ Wire Wire Line
 $Comp
 L Device:C C9
 U 1 1 63D5DAFA
-P 2300 9650
-F 0 "C9" H 2415 9696 50  0000 L CNN
-F 1 "105" H 2415 9605 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 2338 9500 50  0001 C CNN
-F 3 "~" H 2300 9650 50  0001 C CNN
-	1    2300 9650
+P 1350 9700
+F 0 "C9" H 1465 9746 50  0000 L CNN
+F 1 "105" H 1465 9655 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 1388 9550 50  0001 C CNN
+F 3 "~" H 1350 9700 50  0001 C CNN
+	1    1350 9700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -5399,19 +5280,15 @@ F 3 "" H 2850 10750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7700 1400 9000 1400
-Wire Wire Line
-	7000 2850 7000 3750
-Wire Wire Line
-	7000 4250 7000 4950
 $Comp
 L Device:CP C7
 U 1 1 60836EE7
-P 1700 9650
-F 0 "C7" H 1818 9696 50  0000 L CNN
-F 1 "1000uF" H 1818 9605 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" H 1738 9500 50  0001 C CNN
-F 3 "~" H 1700 9650 50  0001 C CNN
-	1    1700 9650
+P 750 9700
+F 0 "C7" H 868 9746 50  0000 L CNN
+F 1 "1000uF" H 868 9655 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm" H 788 9550 50  0001 C CNN
+F 3 "~" H 750 9700 50  0001 C CNN
+	1    750  9700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -5435,8 +5312,6 @@ Wire Wire Line
 	5300 11550 5000 11550
 Wire Wire Line
 	5200 11450 5000 11450
-Wire Wire Line
-	5000 10500 4950 10500
 Wire Wire Line
 	5500 11100 3800 11100
 Wire Wire Line
@@ -5483,20 +5358,18 @@ Wire Wire Line
 	4550 10000 4450 10000
 Connection ~ 4450 10000
 Wire Wire Line
-	4450 10000 4450 10300
-Wire Wire Line
 	4450 10000 3800 10000
 Wire Wire Line
 	3800 10000 3800 10400
 Wire Wire Line
 	4550 2850 4550 10000
 Wire Wire Line
-	1700 9800 2000 9800
+	750  9850 1050 9850
 Wire Wire Line
-	2000 9950 2000 9800
-Connection ~ 2000 9800
+	1050 10000 1050 9850
+Connection ~ 1050 9850
 Wire Wire Line
-	2000 9800 2300 9800
+	1050 9850 1350 9850
 $Comp
 L Device:R_US R1
 U 1 1 683EE3B5
@@ -5811,12 +5684,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR038
 U 1 1 74D59494
-P 2000 9950
-F 0 "#PWR038" H 2000 9700 50  0001 C CNN
-F 1 "GND" H 2005 9777 50  0000 C CNN
-F 2 "" H 2000 9950 50  0001 C CNN
-F 3 "" H 2000 9950 50  0001 C CNN
-	1    2000 9950
+P 1050 10000
+F 0 "#PWR038" H 1050 9750 50  0001 C CNN
+F 1 "GND" H 1055 9827 50  0000 C CNN
+F 2 "" H 1050 10000 50  0001 C CNN
+F 3 "" H 1050 10000 50  0001 C CNN
+	1    1050 10000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -5825,13 +5698,10 @@ Wire Wire Line
 	2550 5750 2500 5750
 Wire Wire Line
 	2400 5350 2400 4750
-Connection ~ 2400 4750
 Wire Wire Line
 	2400 4750 2250 4750
 Wire Wire Line
 	2400 5350 2550 5350
-Wire Wire Line
-	2400 4750 3650 4750
 Wire Wire Line
 	3850 6250 4100 6250
 Connection ~ 3850 6250
@@ -5953,12 +5823,10 @@ Wire Wire Line
 Connection ~ 4100 5950
 Connection ~ 3850 5950
 Wire Wire Line
-	1700 9500 2000 9500
+	750  9550 1050 9550
+Connection ~ 1050 9550
 Wire Wire Line
-	2000 9500 2000 9300
-Connection ~ 2000 9500
-Wire Wire Line
-	2000 9500 2300 9500
+	1050 9550 1350 9550
 $Comp
 L power:GND #PWR029
 U 1 1 80D73C4B
@@ -6072,30 +5940,6 @@ F 3 "~" H 1300 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 3800 2150 4000
-$Comp
-L power:+5V #PWR042
-U 1 1 8A493969
-P 3750 3900
-F 0 "#PWR042" H 3750 3750 50  0001 C CNN
-F 1 "+5V" H 3765 4073 50  0000 C CNN
-F 2 "" H 3750 3900 50  0001 C CNN
-F 3 "" H 3750 3900 50  0001 C CNN
-	1    3750 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR043
-U 1 1 8A493DAE
-P 3750 4300
-F 0 "#PWR043" H 3750 4050 50  0001 C CNN
-F 1 "GND" H 3755 4127 50  0000 C CNN
-F 2 "" H 3750 4300 50  0001 C CNN
-F 3 "" H 3750 4300 50  0001 C CNN
-	1    3750 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	2300 2700 2300 2650
 $Comp
 L 74xx_IEEE:7404 U39
@@ -6175,8 +6019,6 @@ Wire Wire Line
 Connection ~ 2400 8500
 Wire Wire Line
 	2400 8500 4200 8500
-Wire Wire Line
-	3500 9300 2000 9300
 Connection ~ 3500 9300
 $Comp
 L power:+5V #PWR041
@@ -6263,12 +6105,6 @@ F 3 "" H 7800 1150 50  0001 C CNN
 $EndComp
 Text GLabel 4100 7400 2    50   Input ~ 0
 BATT_OUT_MID
-Text GLabel 4000 7900 2    50   Input ~ 0
-BATT_OUT_-
-Wire Wire Line
-	4300 4100 4250 4100
-Wire Wire Line
-	4300 3300 4300 4100
 Wire Wire Line
 	2300 3300 4300 3300
 $Comp
@@ -6407,10 +6243,140 @@ F 3 "" H 17250 10050 50  0001 C CNN
 	1    17250 10050
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74xx:74LS10 U34
+U 1 1 5E987750
+P 3550 4100
+F 0 "U34" H 3550 4425 50  0000 C CNN
+F 1 "К155ЛА4" H 3550 4334 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 3550 4100 50  0001 C CNN
+F 3 "http://www.chipinfo.ru/dsheets/ic/155/la4.html" H 3550 4100 50  0001 C CNN
+	1    3550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS10 U34
+U 2 1 5E987ADA
+P 12500 5700
+F 0 "U34" H 12500 6025 50  0000 C CNN
+F 1 "К155ЛА4" H 12500 5934 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 12500 5700 50  0001 C CNN
+F 3 "http://www.chipinfo.ru/dsheets/ic/155/la4.html" H 12500 5700 50  0001 C CNN
+	2    12500 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS10 U34
+U 3 1 5E987DCE
+P 4250 10500
+F 0 "U34" H 4250 10825 50  0000 C CNN
+F 1 "К155ЛА4" H 4250 10734 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 4250 10500 50  0001 C CNN
+F 3 "http://www.chipinfo.ru/dsheets/ic/155/la4.html" H 4250 10500 50  0001 C CNN
+	3    4250 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS10 U34
+U 4 1 5E9880BF
+P 2200 9800
+F 0 "U34" H 2430 9846 50  0000 L CNN
+F 1 "К155ЛА4" H 2430 9755 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 2200 9800 50  0001 C CNN
+F 3 "http://www.chipinfo.ru/dsheets/ic/155/la4.html" H 2200 9800 50  0001 C CNN
+	4    2200 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 10500 5000 10500
+$Comp
+L power:GND #PWR0124
+U 1 1 5FFE2B51
+P 2200 10300
+F 0 "#PWR0124" H 2200 10050 50  0001 C CNN
+F 1 "GND" H 2205 10127 50  0000 C CNN
+F 2 "" H 2200 10300 50  0001 C CNN
+F 3 "" H 2200 10300 50  0001 C CNN
+	1    2200 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 9300 1050 9550
+Wire Wire Line
+	12800 5700 13200 5700
+Wire Wire Line
+	2400 4750 3650 4750
+Connection ~ 2400 4750
+Wire Wire Line
+	2150 3800 2150 4000
+Wire Wire Line
+	4300 3300 4300 4100
+Wire Wire Line
+	3850 4100 4300 4100
+$Comp
+L 74xx:74LS20 U12
+U 1 1 63D819C6
+P 14000 1650
+F 0 "U12" H 14000 2025 50  0000 C CNN
+F 1 "К155ЛА1" H 14000 1934 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 14000 1650 50  0001 C CNN
+F 3 "http://www.chipinfo.ru/dsheets/ic/155/la1.html" H 14000 1650 50  0001 C CNN
+	1    14000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS20 U12
+U 3 1 63D822FD
+P 1750 9800
+F 0 "U12" H 1980 9846 50  0000 L CNN
+F 1 "К155ЛА1" H 1980 9755 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1750 9800 50  0001 C CNN
+F 3 "http://www.chipinfo.ru/dsheets/ic/155/la1.html" H 1750 9800 50  0001 C CNN
+	3    1750 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4000 7050 4000
+$Comp
+L 74xx:74LS20 U12
+U 2 1 63D81FDF
+P 6750 4000
+F 0 "U12" H 6750 4375 50  0000 C CNN
+F 1 "К155ЛА1" H 6750 4284 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 6750 4000 50  0001 C CNN
+F 3 "http://www.chipinfo.ru/dsheets/ic/155/la1.html" H 6750 4000 50  0001 C CNN
+	2    6750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2850 7700 2850
+Wire Wire Line
+	5700 4950 8050 4950
+Wire Wire Line
+	14750 1650 14300 1650
+Wire Notes Line
+	24200 900  9900 900 
+Wire Wire Line
+	2200 9300 3500 9300
+Connection ~ 2200 9300
+Wire Wire Line
+	1750 10300 2200 10300
+Connection ~ 2200 10300
+Wire Wire Line
+	12200 5800 12100 5800
+Wire Wire Line
+	12100 5800 12100 5950
+Wire Wire Line
+	12100 5950 12200 5950
+Wire Wire Line
+	1050 9300 1750 9300
+Connection ~ 1750 9300
+Wire Wire Line
+	1750 9300 2200 9300
 Wire Bus Line
 	24450 1800 24450 2700
 Wire Bus Line
-	27050 1800 27050 11100
-Wire Bus Line
 	28450 1800 28450 11100
+Wire Bus Line
+	27050 1800 27050 11100
 $EndSCHEMATC
