@@ -5109,7 +5109,7 @@
   )
 
   (module logo:logo locked (layer F.Cu) (tedit 0) (tstamp 5D8E6F41)
-    (at 116.078 185.293)
+    (at 116.84 184.785)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
@@ -11175,6 +11175,9 @@
     )
   )
 
+  (gr_text "Inspired by: Anatoly Glazov / Idea: Anatoly Baranovsky" (at 144.145 189.23) (layer F.SilkS) (tstamp 5E051893)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (dimension 182.88 (width 0.3) (layer F.SilkS)
     (gr_text "182.880 mm" (at 277.69 100.33 270) (layer F.SilkS)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
@@ -11200,9 +11203,6 @@
     (arrow2b (pts (xy 43.18 2.54) (xy 44.306504 1.953579)))
   )
   (target plus (at 256.276491 141.543188) (size 5) (width 0.15) (layer Edge.Cuts))
-  (gr_text "Idea: Anatoly Baranovsky" (at 137.16 189.23) (layer F.SilkS) (tstamp 5DED11D3)
-    (effects (font (size 1.5 1.5) (thickness 0.3)))
-  )
   (gr_line (start 263.525 8.89) (end 263.525 191.77) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 43.18 191.77) (end 43.18 8.89) (layer Edge.Cuts) (width 0.2))
   (gr_line (start 43.18 8.89) (end 263.525 8.89) (layer Edge.Cuts) (width 0.2))

@@ -21,6 +21,7 @@ Usually in this mode pump provides an air instead of water. In this case switchi
 According to this, some of button has a different functions depends on the current mode and device state.
 
 ## Device logical structure
+* [PCB 3D view](#pcb-3d-view "PCB 3D view")
 * [Inputs](#Inputs "Inputs")
     * [Power inputs](#power-inputs "Power inputs")
 	    * [Main power input](#main-power-input "Main power input")
@@ -38,6 +39,9 @@ According to this, some of button has a different functions depends on the curre
 	* [Valves outputs](#valves-outputs "Valves outputs")
 	* [Cascading output (not implemented yet)](#cascading-output "Cascading output (not implemented yet)")
 
+## PCB 3D view
+
+![picture](https://cloud.dynacore.systems/apps/files_sharing/publicpreview/zAkpRHqrjZDFHtE?x=1710&y=534&a=true&file=pcb_3d_top.png&scalingup=0&t=2 "")
 	
 ## Inputs
 
