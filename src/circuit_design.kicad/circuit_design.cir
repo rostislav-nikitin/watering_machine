@@ -1,0 +1,185 @@
+.title KiCad schematic
+U1 NC_01 NC_02 NC_03 Net-_U1-Pad4_ GND CLK_SEC Net-_U1-Pad4_ GND GND CLK_MIN Net-_U1-Pad11_ Net-_C2-Pad1_ Net-_R6-Pad1_ NC_04 NC_05 PWR_ALW К176ИЕ12
+Y1 Net-_C2-Pad1_ Net-_C3-Pad1_ 32768
+C3 Net-_C3-Pad1_ GND 22pF
+C2 Net-_C2-Pad1_ GND 62pF
+R8 Net-_R6-Pad2_ Net-_C2-Pad1_ 10MOhm
+R6 Net-_R6-Pad1_ Net-_R6-Pad2_ 10MOhm
+R9 Net-_C3-Pad1_ Net-_R6-Pad1_ 510KOhm
+R7 Net-_CONN_LED_PWR_4-Pad2_ GND 270Ohm
+U14 Net-_U14-Pad1_ Net-_U14-Pad2_ /Timer.End Net-_U14-Pad4_ Net-_U14-Pad5_ Net-_U14-Pad6_ GND /Reset_Out_ Net-_CONN_SW_DPST01_TIMER_1-Pad2_ Init Net-_U14-Pad11_ Init Net-_R28-Pad2_ +5V К155ЛЛ1
+U6 /Next_Out_ /Reset_Out_ Net-_U15-Pad3_ GND /Completed_In_ Net-_U18-Pad11_ Init Net-_U13-Pad2_ Net-_U11-Pad8_ Net-_U15-Pad3_ +5V К155ЛЛ1
+U33 Net-_U32-Pad2_ Net-_U32-Pad4_ Net-_U31-Pad8_ Net-_U33-Pad4_ Net-_U33-Pad5_ Net-_CONN_SW_DPST01_TIMER_1-Pad2_ GND /Next_Out_ Net-_U32-Pad2_ /Mode_In_ Net-_CONN_BATT_REPLACE_LED_1-Pad1_ CLK_SEC Net-_U17-Pad9_ +5V К155ЛИ1
+U5 GND Net-_U14-Pad5_ /Next_Out_ Net-_U15-Pad2_ +5V К155ЛИ1
+CONN_LED_PWR_4 +5V Net-_CONN_LED_PWR_4-Pad2_ Conn_01x02_Male
+U2 GND /Control_Ext._ /Control_In1_ /Control_Ext.2_ /Control_In2_ /Mode_Ext._ /Mode_In_ GND /Rain_In_ /Rain_Sensor_Ext._ /Rain_Led_ /Rain_In_ /Running_Led_ /Running_Out_ GND +5V К155ЛП10
+R4 +5V Net-_C1-Pad1_ 1KOhm
+U32 Net-_U31-Pad1_ Net-_U32-Pad2_ /Mode_In_ Net-_U32-Pad4_ Net-_CONN_SW_DPST01_TIMER_1-Pad1_ Net-_U32-Pad6_ GND Net-_U18-Pad2_ Net-_U31-Pad13_ /RunningInv_out_ /Running_Out_ +5V К155ЛН1
+U35 +5V +5V GND Net-_U31-Pad10_ Net-_U31-Pad4_ Net-_U33-Pad5_ /Running_Out_ GND Net-_U16-Pad2_ Net-_U14-Pad4_ +5V Net-_U11-Pad8_ GND +5V Net-_U15-Pad4_ +5V К155ТВ15
+U31 Net-_U31-Pad1_ /Control_In1_ /Control_In2_ Net-_U31-Pad4_ /Rain_In_ /Completed_In_ GND Net-_U31-Pad8_ Net-_CONN_SW_DPST01_TIMER_1-Pad2_ Net-_U31-Pad10_ /Reset_Out_ Net-_U18-Pad11_ Net-_U31-Pad13_ +5V К155ЛЕ1
+CONN_LED_RAIN1_7 /Rain_Led_ Net-_CONN_LED_RAIN1_7-Pad2_ Conn_01x02_Male
+CONN_LED_RUNNING_8 /Running_Led_ Net-_CONN_LED_RUNNING_8-Pad2_ Conn_01x02_Male
+CONN_LED_MODE_6 Net-_C5-Pad1_ Net-_CONN_LED_MODE_6-Pad2_ Conn_01x02_Male
+R2 Net-_CONN_LED_RUNNING_8-Pad2_ GND 270Ohm
+R3 Net-_CONN_LED_RAIN1_7-Pad2_ GND 270Ohm
+R5 +5V Net-_CONN_LED_MODE_6-Pad2_ 270Ohm
+U3 /Next_Out_ /Reset_Out_ +5V /Timer.End /Mem.Comparison.Equal Net-_U3-Pad6_ GND +5V К155ЛЕ3
+U9 Net-_U11-Pad12_ Net-_U4-Pad2_ Net-_U4-Pad2_ NC_06 +5V NC_07 NC_08 Net-_U12-Pad4_ Net-_U11-Pad13_ GND Net-_U12-Pad5_ Net-_U11-Pad12_ NC_09 Net-_U11-Pad6_ К155ИЕ5
+U11 Net-_U1-Pad11_ /Running_Out_ Net-_U11-Pad3_ CLK_MIN /Running_Out_ Net-_U11-Pad6_ GND Net-_U11-Pad8_ Net-_U11-Pad9_ /Mem.Comparison.Equal Net-_U11-Pad11_ Net-_U11-Pad12_ Net-_U11-Pad13_ +5V К155ЛИ1
+U4 Net-_U3-Pad6_ Net-_U4-Pad2_ Net-_U11-Pad3_ Net-_U11-Pad9_ GND Net-_U16-Pad1_ Net-_U12-Pad6_ +5V К155ЛН1
+U17 Net-_U15-Pad4_ /Comparison.Equal /Comparison.Equal Net-_U11-Pad3_ +5V /Mem.Comparison.Equal NC_10 GND Net-_U17-Pad9_ NC_11 Net-_U17-Pad11_ NC_12 NC_13 NC_14 Net-_U17-Pad15_ PWR_ALW К155ТВ15
+U13 /Timer.End Net-_U13-Pad2_ Net-_U13-Pad2_ NC_15 +5V NC_16 NC_17 Net-_U13-Pad8_ Net-_U13-Pad9_ GND Net-_U13-Pad11_ NC_18 NC_19 NC_20 К155ИЕ5
+U19 Net-_U19-Pad1_ Net-_U13-Pad9_ Net-_U10-Pad3_ Net-_U19-Pad4_ Net-_U13-Pad8_ Net-_U10-Pad4_ GND Net-_U10-Pad5_ Net-_U19-Pad9_ Net-_U13-Pad11_ Init +5V Net-_C13-Pad1_ +5V К155ЛП5
+U20 /D4 +5V +5V +5V /RunningInv_out_ Net-_U19-Pad9_ Net-_U19-Pad4_ GND Net-_U19-Pad1_ /D0 /D1 /D2 /D3 NC_21 NC_22 +5V К155ИВ1
+U10 Net-_U10-Pad3_ Net-_U10-Pad4_ Net-_U10-Pad5_ Net-_U10-Pad6_ GND +5V К155ЛА4
+U15 /Reset_Out_ Net-_U15-Pad2_ Net-_U15-Pad3_ Net-_U15-Pad4_ Net-_U10-Pad6_ /Comparison.Equal GND +5V К155ЛН1
+JP1_1_60 /D4 Net-_D4-Pad2_ JP
+JP2_1_45 /D3 Net-_D4-Pad2_ JP
+JP3_1_30 /D2 Net-_D4-Pad2_ JP
+JP4_1_15 /D1 Net-_D4-Pad2_ JP
+JP5_1_0 /D0 Net-_D4-Pad2_ JP
+JP06_2_60 /D4 Net-_D3-Pad2_ JP
+JP07_2_45 /D3 Net-_D3-Pad2_ JP
+JP08_2_30 /D2 Net-_D3-Pad2_ JP
+JP09_2_15 /D1 Net-_D3-Pad2_ JP
+JP10_2_0 /D0 Net-_D3-Pad2_ JP
+JP11_3_60 /D4 Net-_D2-Pad2_ JP
+JP12_3_45 /D3 Net-_D2-Pad2_ JP
+JP13_3_30 /D2 Net-_D2-Pad2_ JP
+JP14_3_15 /D1 Net-_D2-Pad2_ JP
+JP15_3_0 /D0 Net-_D2-Pad2_ JP
+JP16_4_60 /D4 Net-_D1-Pad2_ JP
+JP17_4_45 /D3 Net-_D1-Pad2_ JP
+JP18_4_30 /D2 Net-_D1-Pad2_ JP
+JP19_4_15 /D1 Net-_D1-Pad2_ JP
+JP20_4_0 /D0 Net-_D1-Pad2_ JP
+JP21_1_12 /D4 Net-_D8-Pad2_ JP
+JP22_1_9 /D3 Net-_D8-Pad2_ JP
+JP23_1_6 /D2 Net-_D8-Pad2_ JP
+JP24_1_3 /D1 Net-_D8-Pad2_ JP
+JP25_1_0 /D0 Net-_D8-Pad2_ JP
+JP26_2_12 /D4 Net-_D7-Pad2_ JP
+JP27_2_9 /D3 Net-_D7-Pad2_ JP
+JP28_2_6 /D2 Net-_D7-Pad2_ JP
+JP29_2_3 /D1 Net-_D7-Pad2_ JP
+JP30_2_0 /D0 Net-_D7-Pad2_ JP
+JP31_3_12 /D4 Net-_D6-Pad2_ JP
+JP32_3_9 /D3 Net-_D6-Pad2_ JP
+JP33_3_6 /D2 Net-_D6-Pad2_ JP
+JP34_3_3 /D1 Net-_D6-Pad2_ JP
+JP35_3_0 /D0 Net-_D6-Pad2_ JP
+JP36_4_12 /D4 Net-_D5-Pad2_ JP
+JP37_4_9 /D3 Net-_D5-Pad2_ JP
+JP38_4_6 /D2 Net-_D5-Pad2_ JP
+JP39_4_3 /D1 Net-_D5-Pad2_ JP
+JP40_4_0 /D0 Net-_D5-Pad2_ JP
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ 1N5817
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ 1N5817
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ 1N5817
+D4 Net-_D4-Pad1_ Net-_D4-Pad2_ 1N5817
+D5 Net-_D5-Pad1_ Net-_D5-Pad2_ 1N5817
+D6 Net-_D6-Pad1_ Net-_D6-Pad2_ 1N5817
+D7 Net-_D7-Pad1_ Net-_D7-Pad2_ 1N5817
+D8 Net-_D8-Pad1_ Net-_D8-Pad2_ 1N5817
+U21 Net-_U14-Pad4_ Net-_U18-Pad9_ Net-_U18-Pad8_ GND GND /Running_Out_ Net-_D5-Pad1_ GND Net-_D1-Pad1_ Net-_D6-Pad1_ Net-_D2-Pad1_ Net-_D7-Pad1_ Net-_D3-Pad1_ Net-_D8-Pad1_ Net-_D4-Pad1_ +5V К155ИД7
+U18 Net-_U14-Pad6_ Net-_U18-Pad2_ Net-_U18-Pad2_ NC_23 +5V NC_24 NC_25 Net-_U18-Pad8_ Net-_U18-Pad9_ GND Net-_U18-Pad11_ NC_26 NC_27 NC_28 К155ИЕ5
+U22 /Running_Out_ GND Net-_U18-Pad8_ Net-_U22-Pad4_ Net-_U22-Pad5_ Net-_U22-Pad6_ Net-_U22-Pad7_ GND NC_29 NC_30 NC_31 NC_32 Net-_U18-Pad9_ NC_33 NC_34 +5V К155ИД4
+U16 Net-_U16-Pad1_ Net-_U16-Pad2_ Net-_U14-Pad1_ Net-_U11-Pad11_ Net-_U14-Pad4_ Net-_U14-Pad2_ GND +5V К155ЛИ1
+U24 GND Net-_U22-Pad7_ Net-_CONN_LED_LINE1_9-Pad2_ Net-_U22-Pad6_ Net-_CONN_LED_LINE2_10-Pad2_ Net-_U22-Pad5_ Net-_CONN_LED_LINE3_11-Pad2_ GND Net-_CONN_LED_LINE4_12-Pad2_ Net-_U22-Pad4_ NC_35 NC_36 NC_37 NC_38 GND +5V К155ЛП10
+CONN_LED_LINE1_9 Net-_CONN_LED_LINE1_9-Pad1_ Net-_CONN_LED_LINE1_9-Pad2_ Conn_01x02_Male
+CONN_LED_LINE2_10 Net-_CONN_LED_LINE2_10-Pad1_ Net-_CONN_LED_LINE2_10-Pad2_ Conn_01x02_Male
+CONN_LED_LINE3_11 Net-_CONN_LED_LINE3_11-Pad1_ Net-_CONN_LED_LINE3_11-Pad2_ Conn_01x02_Male
+CONN_LED_LINE4_12 Net-_CONN_LED_LINE4_12-Pad1_ Net-_CONN_LED_LINE4_12-Pad2_ Conn_01x02_Male
+R13 Net-_CONN_LED_LINE1_9-Pad1_ +5V 270Ohm
+R12 Net-_CONN_LED_LINE2_10-Pad1_ +5V 270Ohm
+R11 Net-_CONN_LED_LINE3_11-Pad1_ +5V 270Ohm
+R10 Net-_CONN_LED_LINE4_12-Pad1_ +5V 270Ohm
+C1 Net-_C1-Pad1_ GND 100uF
+CONN_SW_DPST_MODE_2 Net-_C5-Pad1_ GND Conn_01x02_Male
+CONN_SW_PUSH_CONTROL_1 GND Net-_C1-Pad1_ Conn_01x02_Male
+CONN_CONTROL_3 Net-_C4-Pad1_ GND Conn_01x02_Male
+CONN_RAIN_SENSOR_5 /Rain_Sensor_Ext._ +5V Conn_01x02_Male
+CONN_PWR_LINE1_13 Net-_CONN_PWR_LINE1_13-Pad1_ GNDREF Conn_01x02_Male
+CONN_PWR_LINE2_14 Net-_CONN_PWR_LINE2_14-Pad1_ GNDREF Conn_01x02_Male
+CONN_PWR_LINE3_15 Net-_CONN_PWR_LINE3_15-Pad1_ GNDREF Conn_01x02_Male
+CONN_PWR_LINE4_16 Net-_CONN_PWR_LINE4_16-Pad1_ GNDREF Conn_01x02_Male
+R16 /Rain_Sensor_Ext._ GND 1KOhm
+U37 NC_39 NC_40 NC_41 Net-_U12-Pad9_ NC_42 NC_43 NC_44 GND NC_45 CLK_MIN Net-_U34-Pad8_ Net-_U12-Pad12_ Net-_U12-Pad10_ NC_46 Net-_U12-Pad13_ PWR_ALW 4020
+U36 Net-_C1-Pad1_ /Control_Ext._ Net-_C4-Pad1_ Net-_U36-Pad4_ Net-_C5-Pad1_ /Mode_Ext._ GND +5V К155ТЛ2
+CONN_SW_DPST01_TIMER_1 Net-_CONN_SW_DPST01_TIMER_1-Pad1_ Net-_CONN_SW_DPST01_TIMER_1-Pad2_ Conn_01x02_Male
+JCONN_SW_DPST02_TIMER_1 Net-_JCONN_SW_DPST02_TIMER_1-Pad1_ Net-_JCONN_SW_DPST02_TIMER_1-Pad2_ Conn_01x02_Male
+J_PWR_1 VAC GNDREF Barrel_Jack
+R_PWR_2 Net-_C_PWR_6-Pad2_ GND 2.4 K
+R_PWR_1 +9V Net-_C_PWR_6-Pad2_ 15K
+U23 Net-_U22-Pad7_ Net-_R18-Pad1_ Net-_U22-Pad6_ Net-_R19-Pad1_ Net-_U22-Pad5_ Net-_R20-Pad1_ GND Net-_R21-Pad1_ Net-_U22-Pad4_ +5V К155ЛН1
+Q1 Net-_CONN_PWR_LINE1_13-Pad1_ VAC Net-_Q1-Pad3_ BT136-600
+Q2 Net-_CONN_PWR_LINE2_14-Pad1_ VAC Net-_Q2-Pad3_ BT136-600
+Q4 Net-_CONN_PWR_LINE4_16-Pad1_ VAC Net-_Q4-Pad3_ BT136-600
+R22 Net-_R22-Pad1_ VAC 1KOhm
+U25 Net-_R18-Pad2_ GND NC_47 Net-_Q1-Pad3_ NC_48 Net-_R22-Pad1_ MOC3062M
+U26 Net-_R19-Pad2_ GND NC_49 Net-_Q2-Pad3_ NC_50 Net-_R23-Pad1_ MOC3062M
+U27 Net-_R20-Pad2_ GND NC_51 Net-_Q3-Pad3_ NC_52 Net-_R24-Pad1_ MOC3062M
+U28 Net-_R21-Pad2_ GND NC_53 Net-_Q4-Pad3_ NC_54 Net-_R25-Pad1_ MOC3062M
+R23 Net-_R23-Pad1_ VAC 1KOhm
+R24 Net-_R24-Pad1_ VAC 1KOhm
+R25 Net-_R25-Pad1_ VAC 1KOhm
+C_PWR_1 Net-_C_PWR_1-Pad1_ GND 1000 uF/50V
+R18 Net-_R18-Pad1_ Net-_R18-Pad2_ 100 Ohm
+R20 Net-_R20-Pad1_ Net-_R20-Pad2_ 100 Ohm
+R19 Net-_R19-Pad1_ Net-_R19-Pad2_ 100 Ohm
+R21 Net-_R21-Pad1_ Net-_R21-Pad2_ 100 Ohm
+Q3 Net-_CONN_PWR_LINE3_15-Pad1_ VAC Net-_Q3-Pad3_ BT136-600
+U_PWR_1 GND Net-_C_PWR_6-Pad2_ Net-_D_PWR_1-Pad1_ Net-_C_PWR_3-Pad2_ Net-_C_PWR_1-Pad1_ XL4015
+DB_PWR_1 Net-_C_PWR_1-Pad1_ GNDREF VAC GND RS207
+C_PWR_3 Net-_C_PWR_1-Pad1_ Net-_C_PWR_3-Pad2_ 105
+C_PWR_2 Net-_C_PWR_1-Pad1_ GND 105
+D_PWR_1 Net-_D_PWR_1-Pad1_ GND MBR745
+C_PWR_4 +9V GND 105
+C_PWR_5 +9V GND 330 uF/50V
+C_PWR_6 +9V Net-_C_PWR_6-Pad2_ 333
+C_OUT_1 VAC Net-_C_OUT_1-Pad2_ 103
+R_OUT_1 Net-_C_OUT_1-Pad2_ Net-_CONN_PWR_LINE1_13-Pad1_ 39
+C_OUT_2 VAC Net-_C_OUT_2-Pad2_ 103
+R_OUT_2 Net-_C_OUT_2-Pad2_ Net-_CONN_PWR_LINE2_14-Pad1_ 39
+C_OUT_3 VAC Net-_C_OUT_3-Pad2_ 103
+R_OUT_3 Net-_C_OUT_3-Pad2_ Net-_CONN_PWR_LINE3_15-Pad1_ 39
+C_OUT_4 VAC Net-_C_OUT_4-Pad2_ 103
+R_OUT_4 Net-_C_OUT_4-Pad2_ Net-_CONN_PWR_LINE4_16-Pad1_ 39
+C6 /Rain_Sensor_Ext._ GND 474
+L1 Net-_D_PWR_1-Pad1_ +9V 47 uH/5A
+C9 PWR_ALW GND 105
+C7 PWR_ALW GND 1000uF
+CONN_BATT_REPLACE_LED_1 Net-_CONN_BATT_REPLACE_LED_1-Pad1_ Net-_CONN_BATT_REPLACE_LED_1-Pad2_ Conn_01x02_Male
+R1 GND Net-_CONN_BATT_REPLACE_LED_1-Pad2_ 200
+U8 NC_55 Net-_C10-Pad1_ BATT_OUT_MID Net-_C10-Pad2_ GND NC_56 NC_57 BATT_OUT_+ ICL7660
+U30 +9V Net-_R17-Pad1_ Net-_R29-Pad2_ GND Net-_D_BATT_1-Pad2_ Net-_R27-Pad2_ Net-_R26-Pad2_ BATT_OUT_+ SC6038
+D_BATT_2 BATT_OUT_+ BATT_OUT_MID SS24T3G
+D_BATT_3 BATT_OUT_MID GND SS24T3G
+C8 +9V GND 100nF
+C11 BATT_OUT_+ GND 100nF
+C12 BATT_OUT_+ GND 22uF/16V
+C10 Net-_C10-Pad1_ Net-_C10-Pad2_ 10uF/16V
+R26 +9V Net-_R26-Pad2_ 0.5R
+R27 +9V Net-_R27-Pad2_ 10K
+R17 Net-_R17-Pad1_ GND 10K
+D_BATT_1 BATT_OUT_+ Net-_D_BATT_1-Pad2_ SS24T3G
+J1 BATT_OUT_+ BATT_OUT_MID GND CONN_BAT
+D10 Net-_D10-Pad1_ Net-_D10-Pad2_ 1N5817
+U29 BATT_OUT_+ GND Net-_D10-Pad2_ LM7806_TO220
+D9 PWR_ALW Net-_D10-Pad1_ 1N4007
+U7 NC_58 NC_59 NC_60 NC_61 NC_62 NC_63 NC_64 GND NC_65 CLK_MIN Net-_R28-Pad2_ Net-_U34-Pad2_ Net-_U34-Pad1_ Net-_U34-Pad13_ NC_66 +5V 4020
+R28 GND Net-_R28-Pad2_ 500R
+U39 Net-_U14-Pad11_ Net-_U17-Pad11_ Net-_U36-Pad4_ /Control_Ext.2_ GND +5V К155ЛН1
+R29 Net-_R28-Pad2_ Net-_R29-Pad2_ 400R
+U38 +9V GND Net-_D11-Pad2_ LM7806_TO220
+D11 PWR_ALW Net-_D11-Pad2_ 1N4007
+D12 +5V Net-_D11-Pad2_ 1N4007
+C13 Net-_C13-Pad1_ GND 100uF
+R30 +5V Net-_C13-Pad1_ 10K
+U34 Net-_U34-Pad1_ Net-_U34-Pad2_ Net-_JCONN_SW_DPST02_TIMER_1-Pad2_ Net-_U31-Pad1_ PWR_ALW Net-_U33-Pad4_ GND Net-_U34-Pad8_ PWR_ALW Net-_U32-Pad6_ Net-_JCONN_SW_DPST02_TIMER_1-Pad1_ Net-_U17-Pad15_ Net-_U34-Pad13_ PWR_ALW К155ЛА4
+U12 Net-_U11-Pad12_ Net-_U11-Pad13_ Net-_U12-Pad4_ Net-_U12-Pad5_ Net-_U12-Pad6_ GND Net-_JCONN_SW_DPST02_TIMER_1-Pad1_ Net-_U12-Pad9_ Net-_U12-Pad10_ Net-_U12-Pad12_ Net-_U12-Pad13_ PWR_ALW К155ЛА1
+R14 Net-_C4-Pad1_ GND 1KOhm
+C4 Net-_C4-Pad1_ GND 100uF
+R15 +5V Net-_C5-Pad1_ 1KOhm
+C5 Net-_C5-Pad1_ GND 100uF
+.end
