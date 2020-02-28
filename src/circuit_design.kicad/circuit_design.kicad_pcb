@@ -11479,7 +11479,7 @@
       (xy -1.488361 -1.718503) (xy -1.452709 -1.73622) (xy -1.437421 -1.736134)) (layer F.SilkS) (width 0.01))
   )
 
-  (module circuit_design:qrcode (layer F.Cu) (tedit 0) (tstamp 5E8B1FBE)
+  (module circuit_design:qrcode locked (layer F.Cu) (tedit 0) (tstamp 5E8B1FBE)
     (at 140.335 99.06)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
