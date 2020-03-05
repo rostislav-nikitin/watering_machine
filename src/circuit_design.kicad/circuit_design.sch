@@ -2994,17 +2994,6 @@ F 3 "http://www.chipinfo.ru/dsheets/ic/155/le1.html" H 22250 8100 50  0001 C CNN
 	4    22250 8100
 	1    0    0    -1  
 $EndComp
-$Comp
-L 74xx_IEEE:7404 U32
-U 3 1 5FAD1672
-P 2850 10500
-F 0 "U32" H 2850 10966 50  0000 C CNN
-F 1 "К155ЛН1" H 2850 10875 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 2850 10500 50  0001 C CNN
-F 3 "http://www.chipinfo.ru/dsheets/ic/155/ln1.html" H 2850 10500 50  0001 C CNN
-	3    2850 10500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	16800 9300 16800 4900
 Wire Wire Line
@@ -4119,8 +4108,6 @@ Wire Wire Line
 	6800 5600 6800 5300
 Wire Wire Line
 	6800 5300 5600 5300
-Wire Wire Line
-	5300 5200 6900 5200
 $Comp
 L Connector:Barrel_Jack J_PWR_1
 U 1 1 5DBF72F2
@@ -4496,28 +4483,9 @@ $EndComp
 Wire Wire Line
 	2450 1800 2450 1600
 Wire Wire Line
-	6900 5200 6900 5500
-Wire Wire Line
-	12000 5500 12000 6100
-Wire Wire Line
-	12000 6100 13100 6100
-Wire Wire Line
-	13100 6100 13100 5900
-Wire Wire Line
-	13100 5900 15400 5900
-Wire Wire Line
-	15400 5900 15400 7700
-Wire Wire Line
-	15400 7700 14900 7700
-Wire Wire Line
-	6900 5500 12000 5500
-Connection ~ 14900 7700
-Wire Wire Line
 	12200 12700 16100 12700
 Wire Wire Line
 	16100 12700 18600 12700
-Text Notes 3000 10900 0    50   ~ 0
-11,10
 $Comp
 L Device:R_US R18
 U 1 1 5DD1C782
@@ -5044,17 +5012,6 @@ Wire Wire Line
 	3250 1300 3250 1550
 Wire Wire Line
 	3250 1200 3250 1300
-$Comp
-L power:GND #PWR024
-U 1 1 657F885A
-P 2850 10750
-F 0 "#PWR024" H 2850 10500 50  0001 C CNN
-F 1 "GND" H 2855 10577 50  0000 C CNN
-F 2 "" H 2850 10750 50  0001 C CNN
-F 3 "" H 2850 10750 50  0001 C CNN
-	1    2850 10750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7700 1400 9000 1400
 $Comp
@@ -5086,8 +5043,6 @@ Wire Wire Line
 Wire Wire Line
 	5500 11900 5000 11900
 Wire Wire Line
-	5300 11550 5000 11550
-Wire Wire Line
 	5200 11450 5000 11450
 Wire Wire Line
 	5500 11100 3800 11100
@@ -5100,14 +5055,6 @@ Wire Wire Line
 	5500 11100 5500 11900
 Wire Wire Line
 	3950 10400 3800 10400
-Wire Wire Line
-	3400 10500 3950 10500
-Wire Wire Line
-	5200 11200 2200 11200
-Wire Wire Line
-	2200 11200 2200 10500
-Wire Wire Line
-	2200 10500 2300 10500
 Wire Wire Line
 	5200 11200 5200 11450
 Wire Wire Line
@@ -5127,10 +5074,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS109" H 2300 3000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 4500 7500 4500
-Wire Wire Line
-	5000 3350 5000 10500
-Wire Wire Line
-	5300 5200 5300 11550
 Wire Wire Line
 	4550 10000 4450 10000
 Connection ~ 4450 10000
@@ -5971,8 +5914,6 @@ Wire Wire Line
 Wire Wire Line
 	16700 9700 14900 9700
 Wire Wire Line
-	14900 9700 14900 7700
-Wire Wire Line
 	16600 11350 16600 9900
 Wire Wire Line
 	16600 9900 16700 9900
@@ -5990,8 +5931,6 @@ Text Notes 12400 11000 0    50   ~ 0
 Power-on init reset
 Wire Wire Line
 	14900 7200 14100 7200
-Wire Wire Line
-	14900 7200 14900 7700
 $Comp
 L power:+5V #PWR0105
 U 1 1 613D17CE
@@ -6620,10 +6559,53 @@ Text Label 6550 7900 0    50   ~ 0
 Conn_Control_Raw
 Text Label 6550 7350 0    50   ~ 0
 Conn_Push_Control_Raw
-Wire Bus Line
-	24450 1800 24450 2700
+Wire Wire Line
+	5000 3350 5000 10500
+Text GLabel 4300 11650 0    50   Input ~ 0
+PWR_ALW
+Wire Wire Line
+	5200 11200 3200 11200
+Wire Wire Line
+	3200 11200 3200 10500
+Wire Wire Line
+	3200 10500 3950 10500
+Wire Wire Line
+	5200 11550 5200 11650
+Wire Wire Line
+	5200 11550 5000 11550
+Wire Wire Line
+	5200 11650 4300 11650
+Wire Wire Line
+	14900 7200 14900 9700
+$Comp
+L Device:R_US R32
+U 1 1 61BC531B
+P 3200 11350
+F 0 "R32" H 3268 11396 50  0000 L CNN
+F 1 "1 KOhm" H 3268 11305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3240 11340 50  0001 C CNN
+F 3 "~" H 3200 11350 50  0001 C CNN
+	1    3200 11350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 11200
+$Comp
+L power:GND #PWR?
+U 1 1 61BC5626
+P 3200 11650
+F 0 "#PWR?" H 3200 11400 50  0001 C CNN
+F 1 "GND" H 3205 11477 50  0000 C CNN
+F 2 "" H 3200 11650 50  0001 C CNN
+F 3 "" H 3200 11650 50  0001 C CNN
+	1    3200 11650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 11500 3200 11650
 Wire Bus Line
 	28450 1800 28450 11100
 Wire Bus Line
 	27050 1800 27050 11100
+Wire Bus Line
+	24450 1800 24450 2700
 $EndSCHEMATC
