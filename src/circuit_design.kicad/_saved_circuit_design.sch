@@ -3845,7 +3845,7 @@ U 1 1 5DC22E5C
 P 2950 1300
 F 0 "DB_PWR_1" H 3291 1346 50  0000 L CNN
 F 1 "RS207" H 3291 1255 50  0000 L CNN
-F 2 "Diode_THT:Diode_Bridge_19.0x3.5x10.0mm_P5.0mm" H 3100 1425 50  0001 L CNN
+F 2 "Diode_THT:Diode_Bridge_Vishay_GBL" H 3100 1425 50  0001 L CNN
 F 3 "https://www.rectron.com/data_sheets/rs201-%20rs207.pdf" H 2950 1300 50  0001 C CNN
 	1    2950 1300
 	1    0    0    -1  
