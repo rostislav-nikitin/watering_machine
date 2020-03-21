@@ -3608,8 +3608,6 @@ F 3 "~" H 3250 1700 50  0001 C CNN
 	1    3250 1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3250 1850 3250 2300
 $Comp
 L power:GNDREF #PWR0119
 U 1 1 5E056A11
@@ -3845,7 +3843,7 @@ U 1 1 5DC22E5C
 P 2950 1300
 F 0 "DB_PWR_1" H 3291 1346 50  0000 L CNN
 F 1 "RS207" H 3291 1255 50  0000 L CNN
-F 2 "Diode_THT:Diode_Bridge_19.0x3.5x10.0mm_P5.0mm" H 3100 1425 50  0001 L CNN
+F 2 "Diode_THT:Diode_Bridge_Vishay_GBL" H 3100 1425 50  0001 L CNN
 F 3 "https://www.rectron.com/data_sheets/rs201-%20rs207.pdf" H 2950 1300 50  0001 C CNN
 	1    2950 1300
 	1    0    0    -1  
@@ -3971,8 +3969,6 @@ Wire Wire Line
 	3850 1200 4150 1200
 Wire Wire Line
 	3850 2000 4150 2000
-Wire Wire Line
-	2650 2300 3250 2300
 Wire Wire Line
 	5150 1800 5150 1400
 Wire Wire Line
@@ -4149,8 +4145,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 3350 5150 3350
 Connection ~ 3250 1300
-Wire Wire Line
-	3250 1300 3250 1550
 Wire Wire Line
 	3250 1200 3250 1300
 Wire Wire Line
@@ -4639,10 +4633,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 1200 3550 1200
 Connection ~ 3550 1200
-Wire Wire Line
-	3550 2300 3250 2300
 Connection ~ 3550 2300
-Connection ~ 3250 2300
 Wire Wire Line
 	4450 2450 7500 2450
 Wire Wire Line
@@ -4773,12 +4764,12 @@ $EndComp
 $Comp
 L Device:R_US R28
 U 1 1 8A03B70A
-P 1300 3750
-F 0 "R28" H 1368 3796 50  0000 L CNN
-F 1 "500R" H 1368 3705 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1340 3740 50  0001 C CNN
-F 3 "~" H 1300 3750 50  0001 C CNN
-	1    1300 3750
+P -100 3750
+F 0 "R28" H -32 3796 50  0000 L CNN
+F 1 "500R" H -32 3705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V -60 3740 50  0001 C CNN
+F 3 "~" H -100 3750 50  0001 C CNN
+	1    -100 3750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -4799,42 +4790,29 @@ Wire Wire Line
 $Comp
 L Device:R_US R29
 U 1 1 8C06C45D
-P 1300 4250
-F 0 "R29" H 1368 4296 50  0000 L CNN
-F 1 "400R" H 1368 4205 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1340 4240 50  0001 C CNN
-F 3 "~" H 1300 4250 50  0001 C CNN
-	1    1300 4250
+P -100 4250
+F 0 "R29" H -32 4296 50  0000 L CNN
+F 1 "400R" H -32 4205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V -60 4240 50  0001 C CNN
+F 3 "~" H -100 4250 50  0001 C CNN
+	1    -100 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1300 4100 1300 4000
 $Comp
 L power:GND #PWR01
 U 1 1 8C4C2ACA
-P 1100 3400
-F 0 "#PWR01" H 1100 3150 50  0001 C CNN
-F 1 "GND" H 1105 3227 50  0000 C CNN
-F 2 "" H 1100 3400 50  0001 C CNN
-F 3 "" H 1100 3400 50  0001 C CNN
-	1    1100 3400
+P -300 3400
+F 0 "#PWR01" H -300 3150 50  0001 C CNN
+F 1 "GND" H -295 3227 50  0000 C CNN
+F 2 "" H -300 3400 50  0001 C CNN
+F 3 "" H -300 3400 50  0001 C CNN
+	1    -300 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 3400 1100 3200
+	-300 3400 -300 3200
 Wire Wire Line
-	1100 3200 1300 3200
-Wire Wire Line
-	1300 3200 1300 3600
-Wire Wire Line
-	1300 4000 2150 4000
-Connection ~ 1300 4000
-Wire Wire Line
-	1300 4000 1300 3900
-Wire Wire Line
-	2150 4500 1300 4500
-Wire Wire Line
-	1300 4500 1300 4400
+	-300 3200 -100 3200
 Wire Wire Line
 	2150 4500 2150 5000
 Wire Wire Line
@@ -5178,9 +5156,6 @@ Wire Wire Line
 Wire Notes Line
 	24200 900  9900 900 
 Wire Wire Line
-	2200 9300 3500 9300
-Connection ~ 2200 9300
-Wire Wire Line
 	1750 10300 2200 10300
 Connection ~ 2200 10300
 Wire Wire Line
@@ -5189,11 +5164,6 @@ Wire Wire Line
 	12100 5800 12100 5950
 Wire Wire Line
 	12100 5950 12200 5950
-Wire Wire Line
-	1050 9300 1750 9300
-Connection ~ 1750 9300
-Wire Wire Line
-	1750 9300 2200 9300
 Wire Wire Line
 	13950 11050 13950 11100
 Wire Wire Line
@@ -5239,8 +5209,6 @@ F 3 "" H 150 2900 50  0001 C CNN
 	1    150  2900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	-600 4000 1300 4000
 Text GLabel 16600 11350 2    50   Input ~ 0
 Init
 Wire Wire Line
@@ -6343,10 +6311,84 @@ Wire Wire Line
 	2450 1400 1950 1400
 Wire Wire Line
 	1950 1200 2450 1200
+Wire Wire Line
+	3250 1300 3250 1550
+Connection ~ 1750 9300
+Wire Wire Line
+	1050 9300 1750 9300
+Connection ~ 2200 9300
+Wire Wire Line
+	1750 9300 2200 9300
+Wire Wire Line
+	2200 9300 3500 9300
+Wire Wire Line
+	3550 2300 3250 2300
+Wire Wire Line
+	2650 2300 3250 2300
+Connection ~ 3250 2300
+Wire Wire Line
+	3250 1850 3250 2300
+Wire Wire Line
+	-100 3200 -100 3600
+Wire Wire Line
+	-100 4100 -100 4000
+Wire Wire Line
+	-100 4000 -100 3900
+Wire Wire Line
+	-600 4000 -100 4000
+Connection ~ -100 4000
+Wire Wire Line
+	-100 4500 -100 4400
+Wire Wire Line
+	-100 4500 2150 4500
+Wire Wire Line
+	1400 3550 1400 3350
+$Comp
+L power:+5V #PWR041
+U 1 1 6606E10C
+P 1400 3350
+F 0 "#PWR041" H 1400 3200 50  0001 C CNN
+F 1 "+5V" H 1415 3523 50  0000 C CNN
+F 2 "" H 1400 3350 50  0001 C CNN
+F 3 "" H 1400 3350 50  0001 C CNN
+	1    1400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R33
+U 1 1 6606E112
+P 1400 3700
+F 0 "R33" H 1468 3746 50  0000 L CNN
+F 1 "4.7K" H 1468 3655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1440 3690 50  0001 C CNN
+F 3 "~" H 1400 3700 50  0001 C CNN
+	1    1400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP_BATT_WATCHDOG1
+U 1 1 6606E11A
+P 950 4000
+F 0 "JP_BATT_WATCHDOG1" H 950 4264 50  0000 C CNN
+F 1 "Jumper" H 950 4173 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 950 4000 50  0001 C CNN
+F 3 "~" H 950 4000 50  0001 C CNN
+	1    950  4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 4000 1400 3850
+Connection ~ 1400 4000
+Wire Wire Line
+	1400 4000 1250 4000
+Wire Wire Line
+	1400 4000 2150 4000
+Wire Wire Line
+	650  4000 -100 4000
+Wire Bus Line
+	24450 1800 24450 2700
 Wire Bus Line
 	27050 1800 27050 11100
 Wire Bus Line
 	28450 1800 28450 11100
-Wire Bus Line
-	24450 1800 24450 2700
 $EndSCHEMATC
