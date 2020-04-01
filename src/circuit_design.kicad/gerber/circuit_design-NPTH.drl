@@ -1,10 +1,13 @@
 M48
-;DRILL file {KiCad 5.0.2-5.fc29} date Wed 11 Dec 2019 12:28:25 AM EET
+;DRILL file {KiCad 5.0.2-5.fc29} date Wed 01 Apr 2020 07:19:00 PM EEST
 ;FORMAT={-:-/ absolute / metric / decimal}
 FMAT,2
 METRIC,TZ
+T1C3.500
 %
 G90
 G05
+T1
+X179.832Y-158.092
 T0
 M30
