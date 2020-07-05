@@ -5,7 +5,7 @@ Watering machine is a device that control a watering of the garden. This particu
 This device is a control unit with outputs to the external valves - one per watering zone.
 
 <!--![picture](https://cloud.dynacore.systems/apps/files_sharing/publicpreview/L8qHpaeza94Mbzw?x=800&y=685&a=true&file=main.png&scalingup=00 "") -->
-![picture](https://lh3.googleusercontent.com/proxy/UT-IOb_x4KlqyPp-zGWHQO0mF21MnzdFfucUCoKksH5z4R97lfu_s4vADvaQHDftPSTWcJwHzlrEs6CZ2Ug1a_u0tiFyEd62Ig8tiyE5xuh8IShrMpPpzD3dQ1ai8TikYl29j_DfLLTafLSWqNq6JWqDb4vaO4U0q_7ACtbsgnM)
+![picture](https://i.imgur.com/Yq3yN4L.png)
 
 
 ## Modes
@@ -124,7 +124,7 @@ Watering start time could be setup only in normal watering model. This can be ma
 The external TTL-levels input behaviour is a same as [Start/Stop/Next button](#start/stop/next-button "Start/Stop/Next button") behaviour. Each high TTL level toggle watering state depends on the current mode and the rain sensor circuit conection state.
 
 ##### External rain sensor input
-It can be used to connect external rain sensor. Rain sensor shold connect both connector pins on rain begins and disconnect on rain ends. When pins are connected then watering is blocking with a maximal priority - no one signal can start watering.
+It can be used to connect external rain sensor. Rain sensor shold connect both connector pins on rain begins and disconnect on rain ends. When pins are connected then watering is blocking with a maximal priohttps://lh3.googleusercontent.com/proxy/UT-IOb_x4KlqyPp-zGWHQO0mF21MnzdFfucUCoKksH5z4R97lfu_s4vADvaQHDftPSTWcJwHzlrEs6CZ2Ug1a_u0tiFyEd62Ig8tiyE5xuh8IShrMpPpzD3dQ1ai8TikYl29j_DfLLTafLSWqNq6JWqDb4vaO4U0q_7ACtbsgnMrity - no one signal can start watering.
 If it connects pins when watering was is in progress then watering stops. And starts only when next start signal comes in case if rain sensor connector pins will be disconnected. 
 
 ## Outputs
