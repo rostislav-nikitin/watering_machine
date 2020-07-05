@@ -4,7 +4,7 @@ Watering machine is a device that control a watering of the garden. This particu
 
 This device is a control unit with outputs to the external valves - one per watering zone.
 
-/*![picture](https://cloud.dynacore.systems/apps/files_sharing/publicpreview/L8qHpaeza94Mbzw?x=800&y=685&a=true&file=main.png&scalingup=00 "")*/
+<!--![picture](https://cloud.dynacore.systems/apps/files_sharing/publicpreview/L8qHpaeza94Mbzw?x=800&y=685&a=true&file=main.png&scalingup=00 "") -->
 ![picture](https://previews.dropbox.com/p/thumb/AA0jmCrZRXNUlWZ0Ye3aTkKqnsT9rLHIY_mIMblwtjwpFdj5zg1CzzRDv2nKooO5-dq0eFHFTYakuuVmjrNM3rl1PLGqqDabMaiv0oFPiCWo95bFkWD9HaIZeQNhuO6S13MLK9ZDGkKVILNjyX8A5a9KItFdYQiap_HocDmrWLpcF_8hV1ldbK13xA_k4ECuna1MOksh-rd4KLkX5WGqPhbiGeDbLR7sgFcl2eivCP4CjJifc1U-tbnNVv03YlvIn3Ttef_39qWagbvBm2DfjMvCt3DH5pqwuRuauEDOJD9HuWMxx21uhaJyx-gTMMWkOqfupBqxvpkDzaMLIJhfu4xnT-RSbZ0OrvVx3MR0oIq0cw/p.png?fv_content=true&size_mode=5)
 
 
