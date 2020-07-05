@@ -5,7 +5,7 @@ Watering machine is a device that control a watering of the garden. This particu
 This device is a control unit with outputs to the external valves - one per watering zone.
 
 <!--![picture](https://cloud.dynacore.systems/apps/files_sharing/publicpreview/L8qHpaeza94Mbzw?x=800&y=685&a=true&file=main.png&scalingup=00 "") -->
-![picture](https://i.imgur.com/G4pfpaF.png)
+![picture](https://i.imgur.com/z10octn.png)
 
 
 ## Modes
@@ -44,7 +44,7 @@ According to this, some of button has a different functions depends on the curre
 ## PCB 3D view
 
 <!-- ![picture](https://cloud.dynacore.systems/apps/files_sharing/publicpreview/zAkpRHqrjZDFHtE?x=1710&y=534&a=true&file=pcb_3d_top.png&scalingup=0&t=2 "") -->
-![picture](https://i.imgur.com/UDQKEPs.png)
+![picture](https://i.imgur.com/V65C3nB.png)
 	
 ## Inputs
 
