@@ -13,7 +13,7 @@ The device is designed to work in a two primary modes.
 
 **Normal watering mode**
 
-Used for the regular day-by-day watering. Each zone watering time interval set by the particular zone settings.https://lh3.googleusercontent.com/proxy/UT-IOb_x4KlqyPp-zGWHQO0mF21MnzdFfucUCoKksH5z4R97lfu_s4vADvaQHDftPSTWcJwHzlrEs6CZ2Ug1a_u0tiFyEd62Ig8tiyE5xuh8IShrMpPpzD3dQ1ai8TikYl29j_DfLLTafLSWqNq6JWqDb4vaO4U0q_7ACtbsgnMrity
+Used for the regular day-by-day watering. Each zone watering time interval set by the particular zone settings.
 
 **Service mode**
 
