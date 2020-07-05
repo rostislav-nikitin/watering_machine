@@ -13,7 +13,7 @@ The device is designed to work in a two primary modes.
 
 **Normal watering mode**
 
-Used for the regular day-by-day watering. Each zone watering time interval set by the particular zone settings.
+Used for the regular day-by-day watering. Each zone watering time interval set by the particular zone settings.https://lh3.googleusercontent.com/proxy/UT-IOb_x4KlqyPp-zGWHQO0mF21MnzdFfucUCoKksH5z4R97lfu_s4vADvaQHDftPSTWcJwHzlrEs6CZ2Ug1a_u0tiFyEd62Ig8tiyE5xuh8IShrMpPpzD3dQ1ai8TikYl29j_DfLLTafLSWqNq6JWqDb4vaO4U0q_7ACtbsgnMrity
 
 **Service mode**
 
@@ -43,7 +43,8 @@ According to this, some of button has a different functions depends on the curre
 
 ## PCB 3D view
 
-![picture](https://cloud.dynacore.systems/apps/files_sharing/publicpreview/zAkpRHqrjZDFHtE?x=1710&y=534&a=true&file=pcb_3d_top.png&scalingup=0&t=2 "")
+<!-- ![picture](https://cloud.dynacore.systems/apps/files_sharing/publicpreview/zAkpRHqrjZDFHtE?x=1710&y=534&a=true&file=pcb_3d_top.png&scalingup=0&t=2 "") -->
+![picture](https://i.imgur.com/UDQKEPs.png)
 	
 ## Inputs
 
@@ -124,7 +125,7 @@ Watering start time could be setup only in normal watering model. This can be ma
 The external TTL-levels input behaviour is a same as [Start/Stop/Next button](#start/stop/next-button "Start/Stop/Next button") behaviour. Each high TTL level toggle watering state depends on the current mode and the rain sensor circuit conection state.
 
 ##### External rain sensor input
-It can be used to connect external rain sensor. Rain sensor shold connect both connector pins on rain begins and disconnect on rain ends. When pins are connected then watering is blocking with a maximal priohttps://lh3.googleusercontent.com/proxy/UT-IOb_x4KlqyPp-zGWHQO0mF21MnzdFfucUCoKksH5z4R97lfu_s4vADvaQHDftPSTWcJwHzlrEs6CZ2Ug1a_u0tiFyEd62Ig8tiyE5xuh8IShrMpPpzD3dQ1ai8TikYl29j_DfLLTafLSWqNq6JWqDb4vaO4U0q_7ACtbsgnMrity - no one signal can start watering.
+It can be used to connect external rain sensor. Rain sensor shold connect both connector pins on rain begins and disconnect on rain ends. When pins are connected then watering is blocking with a maximal priority - no one signal can start watering.
 If it connects pins when watering was is in progress then watering stops. And starts only when next start signal comes in case if rain sensor connector pins will be disconnected. 
 
 ## Outputs
