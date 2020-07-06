@@ -1,4 +1,4 @@
-# Watering machine parameters
+# Watering machine
 
 Watering machine is a device that control a watering of the garden. This particular machine provides sequential zones watering. This was made to avoid low watering pressure that can happens in case of the parallel mode zone watering.
 
