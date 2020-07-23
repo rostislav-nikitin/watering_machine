@@ -92,7 +92,7 @@ In this mode Start/Stop/Next button works in a Start->Next->Stop mode. When wate
 
 ##### Timer On/Off switch button
 
-This button toggle [24 hours internal timer](#24 hours-internal-timer "24 hours internal timer") on/off.
+This button toggle [24 hours internal timer](#24-hours-internal-timer "24 hours internal timer") on/off.
 
 ##### Zone watering time interwal switch
 
