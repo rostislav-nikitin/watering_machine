@@ -156,3 +156,8 @@ There are ouptuts with [valves powering](#valves-powering "Valves powering"). At
 
 ### Cascading output
 On last zone watering finish there is raises short high-level TTL impulse to cascade next watering device in watering devices sequence.
+
+## Links
+Watering machine intro and description on my YouTube channel:
+
+[![Watering machine](http://img.youtube.com/vi/MtbahJqDwK0/0.jpg)](https://www.youtube.com/playlist?list=PLeO-sYwJtKn6DI-ZfQoCn5SV4Xy-Knc86 "Watering machine")
